@@ -51,7 +51,7 @@ const Header = () => {
   ]
 
   return (
-    <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" padding="1rem 4rem"> 
+    <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" padding="1rem 2rem"> 
       <Box>
         <Typography
           color="#F05c26"
