@@ -1,6 +1,7 @@
 import React from 'react'
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
+import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import { Grid, Box, Typography, styled, List, ListItem, Link, ListItemIcon, ListItemButton, Divider } from '@mui/material';
 
 const Footer = () => {
@@ -62,7 +63,7 @@ const Footer = () => {
   ]
 
   return (
-    <Box padding="2rem 4rem">
+    <Box padding="2rem 2rem">
       <Grid container spacing={3}>
         <Grid item lg={4} md={4}>
           <Typography fontWeight="700" fontFamily="Poppins" fontSize="2.25rem">
@@ -134,11 +135,11 @@ const Footer = () => {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  <PlaceIcon sx={{"& svg": {fontSize: "1rem"}}} />
+                  <WatchLaterIcon sx={{"& svg": {fontSize: "1rem"}}} />
                 </ListItemIcon>
                 <Box>
-                  <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Nepal Office:</CustomFooterTypography>
-                  <CustomFooterTypography>Bhatbhateni, Kathmandu</CustomFooterTypography>
+                  <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Office Hours:</CustomFooterTypography>
+                  <CustomFooterTypography>Mon – Fri, 9 AM – 5 PM (NPT)</CustomFooterTypography>
                 </Box>
               </ListItemButton>
             </ListItem>
@@ -157,7 +158,7 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Divider />
-      <Box width="100%" marginTop="1rem" display="flex" justifyContent="center">
+      <Box width="100%" marginTop=".5rem" display="flex" justifyContent="center">
         <CustomFooterTypography>Numeric Mind 2023. All rights reserved</CustomFooterTypography>
       </Box>
     </Box>
