@@ -1,8 +1,8 @@
 import React from 'react'
-import Header from '../shared/Header/Header'
-import Footer from '../shared/Footer/Footer'
-import HeroSection from './HeroSection'
-import WhyNumberic from './WhyNumeric'
+import Header from '../shared/Header/heaaderDetail'
+import Footer from '../shared/Footer/footerDetail'
+import HeroSection from './heroSection'
+import WhyNumberic from './whyNumeric'
 
 const Home = () => {
   return (
