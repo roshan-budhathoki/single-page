@@ -42,7 +42,7 @@ const HeroSection = () => {
                     </Box>
                 </Box>
                 <Box>
-                    <img src={heroNimble} height= "432px" width="528px" alt="heroImage Section" />
+                    <img src={heroNimble} height= "440px" width="473px" alt="heroImage Section" />
                 </Box>
             </Box>
             <Box marginTop="3.9rem" display="flex" justifyContent="space-between" flexWrap="wrap">
