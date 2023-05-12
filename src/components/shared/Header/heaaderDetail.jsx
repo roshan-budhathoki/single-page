@@ -3,7 +3,7 @@ import { Typography, Menu, Box, IconButton, MenuItem, styled } from '@mui/materi
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
-
+import companyLogo from "../../../assets/companyLogo.png";
 const Header = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
@@ -53,14 +53,7 @@ const Header = () => {
   return (
     <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" padding="1rem 2rem"> 
       <Box>
-        <Typography
-          color="#F05c26"
-          fontSize="2rem"
-          fontWeight="600"
-          fontFamily="Poppins"
-        >
-          Numeric Mind
-        </Typography>
+        <img src={companyLogo} alt="this is company logo" />
       </Box>
       <Box display="flex" width="20rem" justifyContent="space-between">
         <CustomMenuTypography>
