@@ -1,6 +1,10 @@
 import React from 'react'
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+
 import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import { Grid, Box, Typography, styled, List, ListItem, Link, ListItemIcon, ListItemButton, Divider } from '@mui/material';
 
@@ -158,8 +162,13 @@ const Footer = () => {
         </Grid>
       </Grid>
       <Divider />
-      <Box width="100%" marginTop=".5rem" display="flex" justifyContent="center">
+      <Box width="100%" marginTop=".5rem" display="flex" justifyContent="space-between">
         <CustomFooterTypography>Numeric Mind 2023. All rights reserved</CustomFooterTypography>
+        <Box display="flex" justifyContent="space-between" width="8rem"> 
+          <FacebookIcon />
+          <TwitterIcon />
+          <InstagramIcon />
+        </Box>
       </Box>
     </Box>
   )

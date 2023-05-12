@@ -8,6 +8,7 @@ import {
 } from "react-router-dom";
 import Home from './components/home/homeDetail';
 import About from './components/about/aboutDetail';
+import { ThemeProvider, createTheme } from '@mui/material';
 
 const router = createBrowserRouter([
   {
@@ -21,10 +22,18 @@ const router = createBrowserRouter([
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
+const theme = createTheme({
+  typography: {
+    fontFamily: "Poppins",
+  },
+});
+
 
 root.render(
   <React.StrictMode>
-    <RouterProvider router={router} />
+    <ThemeProvider theme={theme}>
+      <RouterProvider router={router} />
+    </ThemeProvider>
   </React.StrictMode>
 );
 
