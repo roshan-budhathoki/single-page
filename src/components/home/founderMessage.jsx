@@ -1,24 +1,12 @@
-import { Box, Typography, styled } from "@mui/material";
+import { Box } from "@mui/material";
 
 import founderProfile from "../../assets/founderMessage.png";
 import ButtonComponent from "../utils/ButtonComponent";
+import { CustomDiscriptionTypography, CustomHeadingTypography } from "../utils/CustomTypography";
 
 const FounderMessage = () => {
-    const CustomHeadingTypography = styled(Typography)({
-        fontWeight: 700,
-        fontSize: "2rem",
-        color: "#1F284F",
-    })
-
-    const CustomDiscriptionTypography = styled(Typography)({
-        fontWeight: 400,
-        fontSize: "1.25rem",
-        color: "#575757",
-        margin: "1rem 0rem"
-    })
-    
     return (
-        <Box display="flex" justifyContent="space-between" padding="3rem">
+        <Box display="flex" justifyContent="space-between" alignItems="center" padding="2rem">
             <Box>
                 <img src={founderProfile} alt="founder message" />
             </Box>
@@ -32,7 +20,7 @@ const FounderMessage = () => {
                     lot of working experience on data science. 
                     I believe it's high time to give back to the community and help the new generation of aspiring data scientists to hone their skills and gain expertise in the field of data science.
                 </CustomDiscriptionTypography>
-                <ButtonComponent width="13rem">
+                <ButtonComponent width="13rem" bgcolor="#F05C26">
                     Schedule a Meeting
                 </ButtonComponent>
             </Box>

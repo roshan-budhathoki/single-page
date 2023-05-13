@@ -4,6 +4,7 @@ import Footer from '../shared/Footer/footerDetail'
 import HeroSection from './heroSection'
 import WhyNumberic from './whyNumeric'
 import FounderMessage from './founderMessage'
+import OurPartner from './ourPartner'
 
 const Home = () => {
   return (
@@ -12,6 +13,7 @@ const Home = () => {
         <HeroSection />
         <WhyNumberic />
         <FounderMessage />
+        <OurPartner />
         <Footer />
     </>
   )

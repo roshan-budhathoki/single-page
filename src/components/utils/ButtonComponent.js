@@ -2,7 +2,6 @@ import { Typography, styled } from '@mui/material'
 
 const ButtonComponent = styled(Typography) ({
     color: "#fff",
-    background: "#F05C26",
     textAlign: "center",
     fontWeight: 600,
     fontSize: "1rem",
