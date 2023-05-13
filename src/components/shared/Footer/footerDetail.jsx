@@ -12,21 +12,18 @@ const Footer = () => {
   const CustomFooterTypography = styled(Typography)({
     fontWeight: 400,
     fontSize: "0.8rem",
-    fontFamily: "Poppins",
     color: "#515458"
   })
 
   const CustomHeadingTypography = styled(Typography)({
     fontWeight: 600,
     fontSize: "1.125rem",
-    fontFamily: "Poppins",
     color: "#171819",
   })
 
   const CustomListLinks = styled(Link)({
     fontWeight: 500,
     fontSize: "0.8rem",
-    fontFamily: "Poppins",
     color: "#515458",
     textDecoration: "none !important"
   })
