@@ -1,11 +1,14 @@
 import React from 'react'
+
+import AddIcon from '@mui/icons-material/Add';
 import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import MobileLogo from '../../../assets/mobileLogo.png';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import AccessTimeIcon from '@mui/icons-material/AccessTime';
 
-import WatchLaterIcon from '@mui/icons-material/WatchLater';
 import { Grid, Box, Typography, styled, List, ListItem, Link, ListItemIcon, ListItemButton, Divider } from '@mui/material';
 
 const Footer = () => {
@@ -13,6 +16,13 @@ const Footer = () => {
     fontWeight: 400,
     fontSize: "0.8rem",
     color: "#515458"
+  })
+
+  const MobileFooterTypography = styled(Typography)({
+    fontWeight: 500,
+    fontSize: "1.125rem",
+    color: "#1F284F",
+    lineHeight: "1.625rem"
   })
 
   const CustomHeadingTypography = styled(Typography)({
@@ -64,9 +74,53 @@ const Footer = () => {
   ]
 
   return (
-    <Box padding="2rem 2rem">
+    <Box paddingY="2rem" 
+        sx={{
+          paddingX: {sm: "1rem", md: "2rem", xs: "1rem"}
+        }}
+    >
+      <Box sx={{
+        display: { xs : "block", sm: "block", md: "none"}
+      }}>
+        <img src={MobileLogo} alt="this is mobile logo" />
+        <Typography fontWeight="400" fontSize="0.75rem" color="#515458" lineHeight="1.2rem" marginTop="1.5rem" marginBottom="1rem"> 
+          An American and Nepalese firm called Numeric Mind offers complete statistical analysis services, 
+          especially to clients in the biotech, healthcare, and pharmaceutical industries.
+        </Typography>
+        <Divider />
+        {
+          ["Clinical Services", "Data Services"].map((item, index) => 
+            <Box display="flex" key={index} justifyContent="space-between" marginY="1rem">
+              <MobileFooterTypography>
+                {item}
+              </MobileFooterTypography>
+              <AddIcon sx={{ "& svg": {
+                fontSize: "1rem",
+                color: "#1F284F"
+              }}} />        
+            </Box>
+          )
+        }
+        <Divider />
+        {
+          ["Home", "News & Events", "Career", "Our Team", "Find Us"].map((item, index) => 
+            <Box display="flex" key={index} justifyContent="space-between" marginY="1rem">
+              <MobileFooterTypography>
+                {item}
+              </MobileFooterTypography>
+              <AddIcon sx={{ "& svg": {
+                fontSize: "1rem",
+                color: "#1F284F"
+              }}} />        
+            </Box>
+          )
+        }
+        <Divider />
+      </Box>
       <Grid container spacing={3}>
-        <Grid item lg={4} md={4}>
+        <Grid item lg={4} md={4} sx={{
+          display: { xs : "none", sm: "none", md: "block"}
+        }}>
           <Typography fontWeight="700" fontFamily="Poppins" fontSize="2.25rem">
             Numeric Mind
           </Typography>
@@ -78,7 +132,9 @@ const Footer = () => {
             organizations across the globe.
           </CustomFooterTypography>
         </Grid>
-        <Grid item lg={4} md={4}>
+        <Grid item lg={4} md={4} sx={{
+          display: { xs : "none", sm: "none", md: "flex"}
+        }}>
           <Box display="flex" width="100%" justifyContent="space-around">
             <List>
               <ListItem>
@@ -106,7 +162,7 @@ const Footer = () => {
             </List>
           </Box>
         </Grid>
-        <Grid item lg={4} md={4}>
+        <Grid item lg={4} md={4} >
           <List>
             <ListItem>
               <CustomHeadingTypography>Reach Us</CustomHeadingTypography>
@@ -136,7 +192,7 @@ const Footer = () => {
             <ListItem disablePadding>
               <ListItemButton>
                 <ListItemIcon>
-                  <WatchLaterIcon sx={{"& svg": {fontSize: "1rem"}}} />
+                  <AccessTimeIcon sx={{"& svg": {fontSize: "1rem"}}} />
                 </ListItemIcon>
                 <Box>
                   <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Office Hours:</CustomFooterTypography>
@@ -155,13 +211,26 @@ const Footer = () => {
                 </Box>
               </ListItemButton>
             </ListItem>
+            <ListItem disablePadding>
+              <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" justifyContent="center" width="100%" paddingY= ".5rem"> 
+                <FacebookIcon />
+                <TwitterIcon sx={{ marginX: "1rem"}} />
+                <InstagramIcon />
+              </Box>
+            </ListItem>
           </List>
         </Grid>
       </Grid>
       <Divider />
-      <Box width="100%" marginTop=".5rem" display="flex" justifyContent="space-between">
+      <Box width="100%" marginTop=".5rem" display="flex" sx={{
+        justifyContent: {
+          xs: "center",
+          sm: "center",
+          md: "space-between"
+        }
+      }}>
         <CustomFooterTypography>Numeric Mind 2023. All rights reserved</CustomFooterTypography>
-        <Box display="flex" justifyContent="space-between" width="8rem"> 
+        <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="space-between" width="8rem"> 
           <FacebookIcon />
           <TwitterIcon />
           <InstagramIcon />

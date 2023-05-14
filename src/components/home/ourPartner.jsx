@@ -3,8 +3,11 @@ import { Box, Typography, TextField } from '@mui/material'
 
 import Eclipse from '../../assets/eclipse.png';
 import Cambridge from '../../assets/Cambridge.png';
+import MobileCambridge from '../../assets/mobileUniversity.png';
 import Microsoft from '../../assets/Microsoft.png';
+import MobileMicrosoft from '../../assets/mobileMicrosoft.png';
 import Standford from '../../assets/Standford.png';
+import MobileStandford from '../../assets/mobileGoogle.png'
 import MenuDesign from '../../assets/MenuDesign.png';
 import ButtonComponent from '../utils/ButtonComponent';
 import ContactBelows from '../../assets/ContactBelows.png';
@@ -25,17 +28,43 @@ const OurPartner = () => {
           <CustomHeadingTypography
               fontSize="2.5rem"
               textAlign="center"
+              justifyContent="center"
+              sx={{ display: { xs : "none", sm: "none", md: "flex"}}}
           >
               Our Partners & Alliances
           </CustomHeadingTypography>
-          <Box display="flex" justifyContent="center" paddingY="3rem" marginBottom="4rem">
-            <Box width="50%" justifyContent="space-between" display="flex" alignItems="center">
+          <CustomHeadingTypography
+              fontSize="0.8rem !important"
+              fontWeight="600"
+              textAlign="center"
+              sx={{ display: { xs : "flex", sm: "flex", md: "none"}}}
+          >
+              Trusted By over 150,000 Companies including
+          </CustomHeadingTypography>
+
+          <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="center" paddingY="3rem" marginBottom="4rem">
+            <Box width = "50%" justifyContent="space-between" display="flex" alignItems="center">
               <img src={Standford} alt="standford Profile" height="40px" width="88px"/>
               <img src={Cambridge} alt="cambridge Profile" height="24px" width="118px"/>
               <img src={Microsoft} alt="microsoft Profile" height="24px" width="116px"/>
             </Box>
           </Box>
-          <Box display="flex" justifyContent="space-between">
+          <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" paddingY="2rem" marginBottom=".5rem">
+            <Box width="100%" justifyContent="space-between" display="flex" alignItems="center">
+              <img src={MobileCambridge} alt="cambridge Profile" />
+              <img src={MobileStandford} alt="standford Profile" />
+              <img src={MobileMicrosoft} alt="microsoft Profile" />
+            </Box>
+          </Box>
+          <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} flexDirection="column" alignItems="center"  justifyContent="center" borderRadius="1rem" padding="3rem" bgcolor="#1F384F">
+            <Typography fontWeight="600" fontSize="1.5rem" lineHeight="34.5px" color="#fff" textAlign="center">
+              Receive updates from us.
+            </Typography>
+            <ButtonComponent bgcolor="#F05C26" width="8.6rem" marginTop="1rem">
+              Contact US
+            </ButtonComponent>
+          </Box>
+          <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="space-between">
             <Box>
               <Typography
                 fontWeight="600"
@@ -116,9 +145,9 @@ const OurPartner = () => {
             />
           </Box>
         </Box>
-        <Box width="100%" marginTop="4rem" height="15rem" bgcolor="#F05C26">
-          <img src={Eclipse} alt="eclipse looks" style={{marginTop: "1.7rem"}}/>
-          <img src={ContactBelows} alt="eclipse looks" style={{ position: "absolute", marginTop: "1rem", marginLeft: "38%"}}/>
+        <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} width="100%" marginTop="4rem" height="15rem" bgcolor="#F05C26">
+          <img src={Eclipse} alt="eclipse looks" style={{ marginTop: "1.5rem", marginBottom: "1.5rem"}}/>
+          <img src={ContactBelows} alt="eclipse looks" style={{ position: "absolute", marginTop: "1rem", marginLeft: "45%"}}/>
         </Box>
     </Box>
   )

@@ -32,17 +32,28 @@ const WhyNumberic = () => {
     <Box padding="2rem" sx={{
       backgroundImage: "linear-gradient(to right bottom, #f3f1fe, #f0f3ff, #eef4fe, #eef6fd, #eef7fc)",
     }}>
-      <Typography fontWeight="700" fontFamily="Poppins" fontSize="2.5rem">
+      <Typography fontWeight="700" fontFamily="Poppins"
+        sx={{
+          fontSize: {xs: "1.5rem", sm: "1.5rem", md: "2.5rem"}
+        }}
+      >
         Why Numeric Mind?
       </Typography>
-      <Typography fontWeight="500" fontFamily="Poppins" fontSize="1.5rem" marginY="1.2rem">
+      <Typography fontWeight="500" fontFamily="Poppins" 
+        sx={{
+          fontSize: {xs: "1rem", sm: "1rem", md: "1.5rem"},
+          lineHeight: {xs: "1.5rem", sm: "1.5rem", md: "3.25rem"},
+        }}
+        fontSize="1.5rem" 
+        marginY="1.2rem"
+        >
       A Trusted Statistical Consulting Company based in USA and Nepal consisting of highly 
       experienced data scientists, biostatisticians, business analysts and clinical analysts.
       </Typography>
       <Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} marginBottom="4rem">
         {
           questionNumeric.map((question, index) => 
-          <Grid item xs={2} sm={4} md={4} key={index} sx={{
+          <Grid item xs={12} sm={12} md={4} key={index} sx={{
             marginTop: "1rem"
           }}>
             <Box sx={{maxWidth: "20rem", height: "100%", background: "#fff", borderRadius: "1rem",  paddingX: "2rem", paddingTop:"1.25rem"}}>
