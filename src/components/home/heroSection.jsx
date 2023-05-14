@@ -1,27 +1,39 @@
 import React from 'react';
 import { Typography, Box, styled } from '@mui/material';
 import heroNimble from "../../assets/heroNimble.png";
+import ButtonComponent from '../utils/ButtonComponent';
 const HeroSection = () => {
     const CustomHeadingTypography = styled(Typography)({
         fontWeight: 600,
-        fontSize: "3.125rem",
+        
         fontFamily: "Poppins",
         color: "#1F284F",
+        textAlign: {md: "start", xs: "center", sm: "center"}
     })
     
     return (
-        <Box paddingX="2rem" paddingTop="4rem" marginBottom="2.5rem">
+        <Box sx={{
+            paddingTop: {md: "4rem", sm: "2rem", xs: "2rem"},
+            paddingX: {md: "2rem", sm: "1rem", xs: "1rem"} 
+            }} marginBottom="2.5rem">
             <Box display="flex" justifyContent="space-between">
                 <Box>
-                    <CustomHeadingTypography>Statistical</CustomHeadingTypography>
-                    <CustomHeadingTypography>Data Solutions</CustomHeadingTypography>
+                    <CustomHeadingTypography sx= {{ 
+                        fontSize: {md: "3.125rem", xs: "2.25rem", sm: "2.25rem"},
+                        textAlign: {md: "start", xs: "center", sm: "center"}
+                    }}>Statistical</CustomHeadingTypography>
+                    <CustomHeadingTypography sx={{
+                        fontSize: {md: "3.125rem", xs: "2.25rem", sm: "2.25rem"},
+                        textAlign: {md: "start", xs: "center", sm: "center"}
+                    }}>Data Solutions</CustomHeadingTypography>
                     <Box sx={{
                         fontWeight: 400,
                         fontSize: "1.25rem",
                         fontFamily: "Poppins",
                         color: "#575757",
                         marginTop: "2rem",
-                        width: "30rem"
+                        width:  "30rem",
+                        display: {sm: "none", xs: "none", md: "block" },
                     }}>
                         We offer statistical programming services to biotechnology, healthcare, 
                         biomedical and pharmaceutical companies across the globe. 
@@ -30,22 +42,37 @@ const HeroSection = () => {
                             data analytics.
                         </b>
                     </Box>
+
+                    {/* Mobile View  */}
                     <Box sx={{
+                        fontWeight: 400,
+                        display: {sm: "block", xs: "block", md: "none" },
+                        textAlign:  "center",
+                        fontSize: "1rem",
+                        fontFamily: "Poppins",
+                        color: "#575757",
                         marginTop: "2rem",
-                        background: "#F05C26",
-                        width: "10rem", 
-                        height: "3rem", display: "flex", justifyContent: "center", alignItems: "center",
-                        color: "#fff", 
-                        fontFamily: "Poppins", 
-                        borderRadius: "10px"}}>
-                        Learn More
+                        lineHeight: "2rem",
+                        width:  "21rem",
+                    }}>
+                        We offer statistical programming services to biotechnology, healthcare, 
+                        biomedical and pharmaceutical companies across the globe. 
                     </Box>
+                    <ButtonComponent bgcolor="#F05C26" marginTop="1rem" sx={{
+                        width: {md: "10rem", xs: "93%", sm: "93%"}
+                    }}>
+                        Learn More
+                    </ButtonComponent>
                 </Box>
-                <Box>
+                <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}}>
                     <img src={heroNimble} height= "440px" width="473px" alt="heroImage Section" />
                 </Box>
             </Box>
-            <Box marginTop="3.9rem" display="flex" justifyContent="space-between" flexWrap="wrap">
+            <Box marginTop="3.9rem" 
+                sx={{
+                    display: {xs: "none", sm: "none", md: "flex"}
+                }}
+                justifyContent="space-between" flexWrap="wrap">
                 <Box
                     borderRadius="16px" 
                     width="18rem"
