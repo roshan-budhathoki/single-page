@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, Menu, Box, IconButton, MenuItem, styled } from '@mui/material'
+import { Typography, Menu, Box, IconButton, MenuItem, styled, Link } from '@mui/material'
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
 import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 import MenuIcon from '@mui/icons-material/Menu';
@@ -18,12 +18,13 @@ const Header = () => {
     setAnchorElUser(null);
   };
 
-  const CustomMenuTypography = styled(Typography)({
+  const CustomMenuTypography = styled(Link)({
     fontWeight: 600,
     fontSize: "0.8rem",
     fontFamily: "Poppins",
     color: "#171819",
     textAlign: "center",
+    textDecoration: "none",
     alignItems: "center",
     display: "flex"
   })
@@ -33,6 +34,7 @@ const Header = () => {
     fontSize: "0.8rem",
     fontFamily: "Poppins",
     color: "#171819",
+    textDecoration: "none",
     textAlign: "center",
     alignItems: "center",
     display: "flex"
@@ -72,10 +74,10 @@ const Header = () => {
         <MenuIcon />
       </Box>
       <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} width="20rem" justifyContent="space-between">
-        <CustomMenuTypography>
+        <CustomMenuTypography href="/about">
           About Us
         </CustomMenuTypography>
-        <CustomMenuTypography>
+        <CustomMenuTypography href="/services">
           Services
         </CustomMenuTypography>
         <>
