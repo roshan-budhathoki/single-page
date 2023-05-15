@@ -37,3 +37,16 @@ export const CustomFormLabel = styled(Typography)({
   fontSize: "0.8rem",
   color: "#515458",
 })
+
+export const CustomAboutUs = styled(Typography)({
+  fontWeight: 700,
+  lineHeight: "3rem",
+  color: "#1F284F"
+})
+
+export const CustomAboutDiscription = styled(Typography)({
+  fontWeight: 400,
+  // fontSize: "1.25rem",
+  // lineHeight: "1.9rem",
+  color: "#17181A"
+})
