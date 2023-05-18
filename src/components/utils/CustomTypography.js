@@ -44,6 +44,13 @@ export const CustomAboutUs = styled(Typography)({
   color: "#1F284F"
 })
 
+export const CustomServiceHeading = styled(Typography)({
+  fontWeight: 700,
+  fontSize: " 2.5rem",
+  lineHeight: "3rem",
+  color: "#1F284F"
+})
+
 export const CustomAboutDiscription = styled(Typography)({
   fontWeight: 400,
   // fontSize: "1.25rem",
