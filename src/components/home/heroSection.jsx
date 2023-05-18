@@ -15,7 +15,7 @@ const HeroSection = () => {
         <Container>
             <Box sx={{
                 paddingTop: {md: "4rem", sm: "2rem", xs: "2rem"},
-                paddingX: {md: "2rem", sm: "1rem", xs: "1rem"} 
+                paddingX: {md: "2rem", sm: "0rem", xs: "0rem"} 
                 }} marginBottom="2.5rem">
                 <Box display="flex" justifyContent="space-between">
                     <Box>
