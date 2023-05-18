@@ -78,7 +78,7 @@ const Footer = () => {
     <Container>
       <Box paddingY="2rem" 
           sx={{
-            paddingX: {sm: "1rem", md: "2rem", xs: "1rem"}
+            paddingX: {sm: "0rem", md: "2rem", xs: "0rem"}
           }}
       >
         <Box sx={{
@@ -164,7 +164,7 @@ const Footer = () => {
               </List>
             </Box>
           </Grid>
-          <Grid item lg={4} md={4} >
+          <Grid item lg={4} md={4} sx={{ paddingX: { sm: ".5rem !important", xs: ".5rem !important" }}} >
             <List>
               <ListItem>
                 <CustomHeadingTypography>Reach Us</CustomHeadingTypography>

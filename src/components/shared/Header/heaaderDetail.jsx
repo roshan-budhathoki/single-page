@@ -6,9 +6,11 @@ import MenuIcon from '@mui/icons-material/Menu';
 
 import mobileLogo from "../../../assets/mobileLogo.png";
 import companyLogo from "../../../assets/companyLogo.png";
+import { useNavigate } from 'react-router-dom';
 
 const Header = () => {
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+  const navigate = useNavigate();
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -60,7 +62,7 @@ const Header = () => {
       <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" paddingY="1rem" sx={{
         paddingX: { xs: "1rem", sm: "1rem", md : "2rem" }
       }}> 
-        <Box sx={{ display: { md: "flex", sm: "none", xs: "none" } }}>
+        <Box sx={{ display: { md: "flex", sm: "none", xs: "none" } }} onClick={() => navigate('/')}>
           <img src={companyLogo} alt="this is company logo" />
         </Box>
         <Box sx={{ 
