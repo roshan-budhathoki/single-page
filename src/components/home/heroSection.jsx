@@ -18,7 +18,13 @@ const HeroSection = () => {
                 paddingX: {md: "2rem", sm: "0rem", xs: "0rem"} 
                 }} marginBottom="2.5rem">
                 <Box display="flex" justifyContent="space-between">
-                    <Box>
+                    <Box 
+                        sx={{
+                            display: {sm: "flex", md: "block", xs: "flex"},
+                            flexDirection: "column",
+                            alignItems: "center"
+                        }}
+                    >
                         <CustomHeadingTypography sx= {{ 
                             fontSize: {md: "3.125rem", xs: "2.25rem", sm: "2.25rem"},
                             textAlign: {md: "start", xs: "center", sm: "center"}
@@ -54,7 +60,6 @@ const HeroSection = () => {
                             color: "#575757",
                             marginTop: "2rem",
                             lineHeight: "2rem",
-                            width:  "21rem",
                         }}>
                             We offer statistical programming services to biotechnology, healthcare, 
                             biomedical and pharmaceutical companies across the globe. 

@@ -25,7 +25,7 @@ const OurPartner = () => {
       <Box position="relative" sx={{
           backgroundImage: "linear-gradient(to right bottom, #f3f1fe, #f0f3ff, #eef4fe, #eef6fd, #eef7fc)",
         }}>
-          <Box padding="2rem">
+          <Box padding={{ md: "2rem", sm: "1rem", xs: "1rem" }}>
             <CustomHeadingTypography
                 fontSize="2.5rem"
                 textAlign="center"
