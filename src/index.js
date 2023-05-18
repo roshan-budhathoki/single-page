@@ -9,6 +9,7 @@ import {
 import Home from './components/home/homeDetail';
 import About from './components/about/aboutDetail';
 import { ThemeProvider, createTheme } from '@mui/material';
+import Services from './components/services/serviceDetail';
 
 const router = createBrowserRouter([
   {
@@ -18,7 +19,12 @@ const router = createBrowserRouter([
   {
     path: "/about",
     element: <About />
+  },
+  {
+    path: "/services",
+    element: <Services />
   }
+
 ]);
 const root = ReactDOM.createRoot(document.getElementById('root'));
 
