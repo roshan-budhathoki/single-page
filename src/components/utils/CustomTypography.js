@@ -1,5 +1,14 @@
 import { Typography, styled } from "@mui/material"
 
+export const CustomServiceTypography = styled(Typography)({
+    fontWeight: 600,
+    fontSize: "1.25rem",
+    textAlign: "center",
+    alignItems: "center",
+    display: "flex",
+    justifyContent: "center"
+  })
+
 export const CustomMenuTypography = styled(Typography)({
     fontWeight: 600,
     fontSize: "0.8rem",
@@ -53,7 +62,5 @@ export const CustomServiceHeading = styled(Typography)({
 
 export const CustomAboutDiscription = styled(Typography)({
   fontWeight: 400,
-  // fontSize: "1.25rem",
-  // lineHeight: "1.9rem",
   color: "#17181A"
 })
