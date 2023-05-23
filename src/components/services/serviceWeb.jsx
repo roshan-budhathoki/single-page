@@ -10,7 +10,7 @@ import { CustomServiceHeading, CustomServiceTypography } from "../utils/CustomTy
 import { CustomAboutDiscription, CustomAboutUs } from '../utils/CustomTypography'
 
 const ServiceWeb = () => {
-  const [showClinical, setShowClinical] = React.useState(false);
+  const [showClinical, setShowClinical] = React.useState(true);
   return (
     <Container >
       <Box
