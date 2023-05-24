@@ -23,7 +23,7 @@ const AboutContent = () => {
                 justifyContent="center" alignItems="center" width="100%" >
                 <CustomAboutUs
                     fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
-                    marginTop={{md: "2rem"}}
+                    marginTop={{md: "2rem", xs: ".5rem"}}
                 >
                     About Us
                 </CustomAboutUs>

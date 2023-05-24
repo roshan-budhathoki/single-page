@@ -11,8 +11,10 @@ import AccessTimeIcon from '@mui/icons-material/AccessTime';
 import {Container} from '@mui/material';
 
 import { Grid, Box, Typography, styled, List, ListItem, Link, ListItemIcon, ListItemButton, Divider } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 const Footer = () => {
+  const navigate = useNavigate();
   const CustomFooterTypography = styled(Typography)({
     fontWeight: 400,
     fontSize: "0.8rem",
@@ -43,56 +45,56 @@ const Footer = () => {
   const services = [
     {
       name: "Clinical Services",
-      url: "#"
+      url: "/services"
     },
     {
       name: "Data Sevices",
-      url: "#"
+      url: "/services"
     }
   ];
 
   const abouts = [
     {
       name: "Home",
-      url: "#"
+      url: "/"
     },
     {
       name: "News & Opinion",
-      url: "#"
+      url: "/news"
     },
     {
       name: "Career",
-      url: "#"
+      url: "/careers"
     },
     {
       name: "Our Team",
-      url: "#"
+      url: "/teams"
     },
     {
       name: "Find Us",
-      url: "#"
+      url: "/about"
     }
   ]
 
   return (
     <Container>
-      <Box paddingY="2rem" 
+      <Box paddingY="2rem"
       >
         <Container>
           <Box sx={{
             display: { xs : "block", sm: "block", md: "none"}
           }}>
-            <img src={MobileLogo} alt="this is mobile logo" />
+            <img src={MobileLogo} alt="this is mobile logo" onClick={() => navigate('/')} />
             <Typography fontWeight="400" fontSize="0.75rem" color="#515458" lineHeight="1.2rem" marginTop="1.5rem" marginBottom="1rem"> 
               An American and Nepalese firm called Numeric Mind offers complete statistical analysis services, 
               especially to clients in the biotech, healthcare, and pharmaceutical industries.
             </Typography>
             <Divider />
             {
-              ["Clinical Services", "Data Services"].map((item, index) => 
-                <Box display="flex" key={index} justifyContent="space-between" marginY="1rem">
+              services.map((item, index) => 
+                <Box display="flex" key={index} justifyContent="space-between" marginY="1rem" onClick={()=> navigate(item.url)}>
                   <MobileFooterTypography>
-                    {item}
+                    {item.name}
                   </MobileFooterTypography>
                   <AddIcon sx={{ "& svg": {
                     fontSize: "1rem",
@@ -103,10 +105,10 @@ const Footer = () => {
             }
             <Divider />
             {
-              ["Home", "News & Events", "Career", "Our Team", "Find Us"].map((item, index) => 
-                <Box display="flex" key={index} justifyContent="space-between" marginY="1rem">
+              abouts.map((item, index) => 
+                <Box display="flex" key={index} justifyContent="space-between" marginY="1rem" onClick={()=> navigate(item.url)}>
                   <MobileFooterTypography>
-                    {item}
+                    {item.name}
                   </MobileFooterTypography>
                   <AddIcon sx={{ "& svg": {
                     fontSize: "1rem",

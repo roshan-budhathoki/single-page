@@ -4,7 +4,9 @@ import {
   List, MenuItem, ListItemButton,  
   styled, Link, Container,
   ListItem, ListItemIcon, ListItemText, 
-  SwipeableDrawer,  
+  SwipeableDrawer,
+  AppBar,
+  Toolbar,  
 } from '@mui/material'
 
 import KeyboardArrowDownIcon from '@mui/icons-material/KeyboardArrowDown';
@@ -29,7 +31,6 @@ const Header = () => {
 
   const location = useLocation();
   const { pathname } = location;
-  console.log({pathname});
 
   const handleOpenUserMenu = (event) => {
     setAnchorElUser(event.currentTarget);
@@ -138,7 +139,8 @@ const Header = () => {
             sx={{ 
                 color: 
                       pathname === "/careers" || 
-                      pathname === "/teams" 
+                      pathname === "/teams" || 
+                      pathname === "/news" 
                 ? "#F05C26" : "#171819"
               }} 
           />
@@ -167,30 +169,49 @@ const Header = () => {
   return (
     <Container>
       <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" paddingY="1rem" sx={{
-        paddingX: { xs: "1rem", sm: "1rem", md : "2rem" }
+        paddingX: { xs: "1rem", sm: "1rem", md : "2rem" } 
       }}> 
         <Box sx={{ display: { md: "flex", sm: "none", xs: "none" } }} onClick={() => navigate('/')}>
           <img src={companyLogo} alt="this is company logo" />
         </Box>
-        <Box sx={{ 
-          display: { md: "none", sm: "flex", xs: "flex" }, 
-          justifyContent:"space-between",
-          alignItems: "center",
-          width: "100%" 
-        }}>
-          <Box>
-            <img src={mobileLogo} alt="this is company logo" />
-          </Box>
-          <MenuIcon onClick={toggleDrawer(true)} />
-          <SwipeableDrawer
-            anchor="right"
-            open={openMenu}
-            onClose={toggleDrawer(false)}
-            onOpen={toggleDrawer(false)}
+        <AppBar
+          sx={{
+            display: { md: "none", sm: "flex", xs: "flex" }, 
+            width: "100%",
+          }}
+        >
+          <Toolbar
+            sx={{
+              display: { md: "none", sm: "flex", xs: "flex" }, 
+              justifyContent:"space-between",
+              alignItems: "center",
+              background: "#FAFBFC", 
+              position: "fixed",
+              width: "100%" 
+            }}
           >
-            <MobileMenu />
-          </SwipeableDrawer>
-        </Box>
+            <Box onClick={() => navigate('/')}>
+              <img src={mobileLogo} alt="this is company logo" />
+            </Box>
+            <IconButton
+              size="large"
+              edge="start"
+              color="inherit"
+              aria-label="menu"
+              sx={{ mr: 2, color: "black" }}
+            >
+              <MenuIcon onClick={toggleDrawer(true)} />
+            </IconButton>
+            <SwipeableDrawer
+              anchor="right"
+              open={openMenu}
+              onClose={toggleDrawer(false)}
+              onOpen={toggleDrawer(false)}
+            >
+              <MobileMenu />
+            </SwipeableDrawer>
+          </Toolbar>
+        </AppBar>
         <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} width="20rem" justifyContent="space-between">
           <CustomMenuTypography href="/about" sx={{ color: pathname === "/about" ? "#F05C26" : "#171819"}}>
             About Us
@@ -203,7 +224,8 @@ const Header = () => {
               <CustomMenuTypography marginRight=".3rem" sx={{ 
                   color: 
                         pathname === "/careers" || 
-                        pathname === "/teams" 
+                        pathname === "/teams" || 
+                        pathname === "/news"
                   ? "#F05C26" : "#171819"
 
                 }}>Company</CustomMenuTypography>
