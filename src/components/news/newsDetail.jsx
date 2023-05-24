@@ -1,16 +1,16 @@
 import React from 'react'
-import ServiceWeb from './serviceWeb'
 import Header from '../shared/Header/headerDetail'
 import Footer from '../shared/Footer/footerDetail'
+import NewsContent from './newsContent'
 
-const Services = () => {
+const News = () => {
   return (
     <>
-      <Header />
-      <ServiceWeb />
-      <Footer />
+        <Header/> 
+        <NewsContent />
+        <Footer />
     </>
   )
 }
 
-export default Services
+export default News

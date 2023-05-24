@@ -24,7 +24,7 @@ const ServiceWeb = () => {
               <CustomServiceHeading 
                 textAlign="center" 
                 fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
-                marginTop={{md: "2rem"}}
+                marginTop={{md: "2rem", xs: ".5rem"}}
               >
               Services
               </CustomServiceHeading>

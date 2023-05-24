@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../shared/Header/heaaderDetail'
+import Header from '../shared/Header/headerDetail'
 import Footer from '../shared/Footer/footerDetail'
 import CareerContent from './CareerContent'
 
