@@ -4,26 +4,27 @@ import {
     Box,
     Container,
     Typography,
-    Grid
+    Grid,
+    Link
   } from "@mui/material";
 import { CustomServiceHeading } from "../utils/CustomTypography";
   
 const CareerContent = () => {
     const careerNumeric = [
         {
-            url: "#",
+            url: "/careers/clinical-statistical",
             jobOpening: "Clinical Statistical / SAS Trainees"
         },
         {
-            url: "#",
+            url: "/careers/clinical-statistical",
             jobOpening: "Clinical Statistical / SAS Trainees"
         },
         {
-            url: "#",
+            url: "/careers/clinical-statistical",
             jobOpening: "Clinical Statistical / SAS Trainees"
         },
         {
-            url: "#",
+            url: "/careers/clinical-statistical",
             jobOpening: "Clinical Statistical / SAS Trainees"
         },
     ]
@@ -45,7 +46,7 @@ const CareerContent = () => {
                     <CustomServiceHeading 
                     textAlign="center" 
                     fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
-                    marginTop={{md: "2rem", sm: ".5rem"}}
+                    marginTop={{md: "2rem", sm: "1rem", xs: "1rem"}}
                     >
                     Careers
                     </CustomServiceHeading>
@@ -83,8 +84,10 @@ const CareerContent = () => {
                             <Typography fontWeight="600" fontSize="1.5rem" fontFamily="Poppins" color="#1F284F">
                             {career.jobOpening}
                             </Typography>
-                            <Box borderLeft="2px solid #0070F0E5" color="#0070F0E5" paddingLeft="1rem" marginTop="1rem">
-                                View Job
+                            <Box borderLeft="3px solid #1F284F"  color="#0070F0E5" paddingLeft="1rem" marginTop="1rem">
+                                <Link href={career.url} sx={{textDecoration: "none"}}>
+                                    View Job
+                                </Link>
                             </Box>
                         </Box>
                     </Grid>

@@ -12,6 +12,7 @@ import { ThemeProvider, createTheme } from '@mui/material';
 import Services from './components/services/serviceDetail';
 import Career from './components/career/CareerDetails';
 import News from './components/news/newsDetail';
+import SingleCareer from './components/career/SingleCareer';
 
 const router = createBrowserRouter([
   {
@@ -29,6 +30,10 @@ const router = createBrowserRouter([
   {
     path: "/careers",
     element: <Career />
+  },
+  {
+    path: "/careers/:id",
+    element: <SingleCareer />
   },
   {
     path: "/news",
