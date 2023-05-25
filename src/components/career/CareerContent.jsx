@@ -81,8 +81,11 @@ const CareerContent = () => {
                             height: "100%", 
                             boxShadow: "0px 4px 4px rgba(0, 0, 0, 0.25)",
                             background: "#fff", borderRadius: "1rem",  paddingX: "2rem", paddingTop:"1.25rem"}}>
-                            <Typography fontWeight="600" fontSize="1.5rem" fontFamily="Poppins" color="#1F284F">
-                            {career.jobOpening}
+                            <Typography fontWeight="600" fontSize={{ md: "1.5rem", sm: "1rem", xs: "1rem" }} fontFamily="Poppins" color="#1F284F">
+                                {career.jobOpening.split("/")[0]}
+                            </Typography>
+                            <Typography fontWeight="600" fontSize={{ md: "1.5rem", sm: "1rem", xs: "1rem" }} fontFamily="Poppins" color="#1F284F">
+                                {`/${career.jobOpening.split("/")[1]}`}
                             </Typography>
                             <Box borderLeft="3px solid #1F284F"  color="#0070F0E5" paddingLeft="1rem" marginTop="1rem">
                                 <Link href={career.url} sx={{textDecoration: "none"}}>
