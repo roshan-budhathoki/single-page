@@ -98,12 +98,10 @@ const Header = () => {
   const parentMobileMenu = [
     {
       name: "About Us",
-      icon: <InboxIcon />,
       path: "/about"
     },
     {
       name: "Services",
-      icon: <InboxIcon />,
       path: "/services"
     }
   ]
@@ -123,18 +121,12 @@ const Header = () => {
           parentMobileMenu.map((item, index) => 
             <ListItem key={index} disablePadding onClick={() => navigate(`${item.path}`)}>
               <ListItemButton >
-                <ListItemIcon>
-                  {item.icon}
-                </ListItemIcon>
                 <ListItemText primary={item.name} sx={{ marginTop: "0.4rem", color: pathname === item.path ? "#F05C26" : "#171819"  }} />
               </ListItemButton>
             </ListItem>
           )
         }
         <ListItemButton onClick={handleClick}>
-          <ListItemIcon>
-            <InboxIcon />
-          </ListItemIcon>
           <ListItemText primary="Company" 
             sx={{ 
                 color: 
@@ -144,7 +136,23 @@ const Header = () => {
                 ? "#F05C26" : "#171819"
               }} 
           />
-          {openSubMenu ? <ExpandLess /> : <ExpandMore />}
+          {openSubMenu ? <ExpandLess
+              sx={{ 
+                color: 
+                      pathname === "/careers" || 
+                      pathname === "/teams" || 
+                      pathname === "/news" 
+                ? "#F05C26" : "#171819"
+              }} 
+          /> : <ExpandMore 
+              sx={{ 
+                color: 
+                      pathname === "/careers" || 
+                      pathname === "/teams" || 
+                      pathname === "/news" 
+                ? "#F05C26" : "#171819"
+              }} 
+          />}
         </ListItemButton>
         <Collapse in={openSubMenu} timeout="auto" unmountOnExit>
           <List component="div" disablePadding>
@@ -187,7 +195,8 @@ const Header = () => {
               alignItems: "center",
               background: "#FAFBFC", 
               position: "fixed",
-              width: "100%" 
+              width: "100%",
+              paddingX: "2rem" 
             }}
           >
             <Box onClick={() => navigate('/')}>
@@ -198,7 +207,7 @@ const Header = () => {
               edge="start"
               color="inherit"
               aria-label="menu"
-              sx={{ mr: 2, color: "black" }}
+              sx={{ mr: 6, color: "black" }}
             >
               <MenuIcon onClick={toggleDrawer(true)} />
             </IconButton>
@@ -231,14 +240,22 @@ const Header = () => {
                 }}>Company</CustomMenuTypography>
               { 
                 anchorElUser ? 
-                <KeyboardArrowUpIcon sx={{color: 
-                  pathname === "/careers" || 
-                  pathname === "/teams" 
-                  ? "#F05C26" : "#171819"}}/> : 
-                <KeyboardArrowDownIcon sx={{ color: 
-                  pathname === "/careers" || 
-                  pathname === "/teams" 
-                  ? "#F05C26" : "#171819"}} />
+                <KeyboardArrowUpIcon 
+                sx={{
+                  color: 
+                      pathname === "/careers" || 
+                      pathname === "/teams" || 
+                      pathname === "/news" 
+                ? "#F05C26" : "#171819"
+                }}
+                  /> : 
+                <KeyboardArrowDownIcon sx={{ 
+                  color: 
+                      pathname === "/careers" || 
+                      pathname === "/teams" || 
+                      pathname === "/news" 
+                ? "#F05C26" : "#171819"
+                }} />
               }
             </IconButton>
             <Menu
