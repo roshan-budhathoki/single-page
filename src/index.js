@@ -14,6 +14,9 @@ import Career from './components/career/CareerDetails';
 import News from './components/news/newsDetail';
 import SingleCareer from './components/career/SingleCareer';
 
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+
 const router = createBrowserRouter([
   {
     path: "/",
