@@ -1,7 +1,7 @@
 import { Typography, Box, Grid, Container } from '@mui/material'
 import React from 'react'
 
-const WhyNumberic = () => {
+const WhyNumeric = () => {
   const questionNumeric = [
     {
       name: "Quality",
@@ -74,4 +74,4 @@ const WhyNumberic = () => {
   )
 }
 
-export default WhyNumberic
+export default WhyNumeric
