@@ -19,7 +19,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
 import mobileLogo from "../../../assets/mobileLogo.png";
-import companyLogo from "../../../assets/companyLogo.png";
+import companyLogo from "../../../assets/Final Variant Logo.png";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
@@ -180,7 +180,7 @@ const Header = () => {
         paddingX: { xs: "1rem", sm: "1rem", md : "2rem" } 
       }}> 
         <Box sx={{ display: { md: "flex", sm: "none", xs: "none" } }} onClick={() => navigate('/')}>
-          <img src={companyLogo} alt="this is company logo" />
+          <img src={companyLogo} alt="this is company logo" height="auto" width="208px" />
         </Box>
         <AppBar
           sx={{

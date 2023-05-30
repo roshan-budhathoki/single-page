@@ -2,6 +2,7 @@ import React from 'react';
 import { Typography, Box, styled, Container } from '@mui/material';
 import heroNimble from "../../assets/heroNimble.png";
 import ButtonComponent from '../utils/ButtonComponent';
+import { useNavigate } from 'react-router-dom';
 const HeroSection = () => {
     const CustomHeadingTypography = styled(Typography)({
         fontWeight: 600,
@@ -10,6 +11,8 @@ const HeroSection = () => {
         color: "#1F284F",
         textAlign: {md: "start", xs: "center", sm: "center"}
     })
+
+    const navigate = useNavigate();
     
     return (
         <Container>
@@ -66,7 +69,9 @@ const HeroSection = () => {
                         </Box>
                         <ButtonComponent bgcolor="#F05C26" marginTop="1rem" sx={{
                             width: {md: "10rem", xs: "93%", sm: "93%"}
-                        }}>
+                            }}
+                            onClick={() => navigate("/about")}
+                        >
                             Learn More
                         </ButtonComponent>
                     </Box>
