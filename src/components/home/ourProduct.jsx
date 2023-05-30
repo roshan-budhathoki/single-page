@@ -55,7 +55,7 @@ const OurProduct = () => {
                         position: "absolute",
                         height: "2.7rem",
                         marginTop: "18%",
-                        marginLeft: "60%",
+                        marginLeft: "62%",
                         zIndex: "10" 
                     }}
                     disabled={currentIndex === length - 3}
