@@ -19,7 +19,7 @@ import ExpandLess from '@mui/icons-material/ExpandLess';
 import ExpandMore from '@mui/icons-material/ExpandMore';
 
 import mobileLogo from "../../../assets/mobileLogo.png";
-import companyLogo from "../../../assets/Final Variant Logo.png";
+import companyLogo from "../../../assets/companyLogo.png";
 import { useLocation, useNavigate } from 'react-router-dom';
 
 const Header = () => {
