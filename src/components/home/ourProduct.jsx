@@ -37,31 +37,29 @@ const OurProduct = () => {
 
     return (
         <Container>
-            <Box display={{ md: "flex", sm: "none", xs: "none"}}>
-                <IconButton onClick={handlePrevClick} sx={{  
-                        border: currentIndex === 0 ? "2px solid #898D95" : "2px solid #0070F0" , 
-                        position: "absolute",
-                        height: "2.7rem",
-                        marginTop: "18%",
-                        marginLeft: "-2%",
-                        zIndex: "10" 
-                    }}
-                    disabled={currentIndex === 0}
-                >
-                    <ArrowBackIcon sx={{ color: currentIndex === 0 ? "#898D95" : "#0070F0"}}/>
-                </IconButton>
-                <IconButton onClick={handleNextClick} sx={{  
-                        border: currentIndex === length - 3 ? "2px solid #898D95" : "2px solid #0070F0" , 
-                        position: "absolute",
-                        height: "2.7rem",
-                        marginTop: "18%",
-                        marginLeft: "62%",
-                        zIndex: "10" 
-                    }}
-                    disabled={currentIndex === length - 3}
-                >
-                    <ArrowForwardIcon sx={{ color: currentIndex === length - 3 ? "#898D95" : "#0070F0"  }}/>
-                </IconButton>
+            <Box display={{ md: "flex", sm: "none", xs: "none"}} position="relative">
+                <Box width="100%" position="absolute" display="flex" justifyContent="space-between">
+                    <IconButton onClick={handlePrevClick} sx={{  
+                            border: currentIndex === 0 ? "2px solid #898D95" : "2px solid #0070F0" , 
+                            height: "2.7rem",
+                            marginTop: "28%",
+                            zIndex: "10" 
+                        }}
+                        disabled={currentIndex === 0}
+                    >
+                        <ArrowBackIcon sx={{ color: currentIndex === 0 ? "#898D95" : "#0070F0"}}/>
+                    </IconButton>
+                    <IconButton onClick={handleNextClick} sx={{  
+                            border: currentIndex === length - 3 ? "2px solid #898D95" : "2px solid #0070F0" , 
+                            height: "2.7rem",
+                            marginTop: "28%",
+                            zIndex: "10" 
+                        }}
+                        disabled={currentIndex === length - 3}
+                    >
+                        <ArrowForwardIcon sx={{ color: currentIndex === length - 3 ? "#898D95" : "#0070F0"  }}/>
+                    </IconButton>
+                </Box>
                 <Container>
                     <Box padding="2rem" marginBottom="1rem">
                         <CustomServiceHeading marginTop="2rem">
