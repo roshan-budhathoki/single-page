@@ -1,4 +1,4 @@
-import { Typography, Box, Grid, Container } from '@mui/material'
+import { Typography, Box, Grid, Container, Link } from '@mui/material'
 import React from 'react'
 
 const WhyNumeric = () => {
@@ -69,6 +69,50 @@ const WhyNumeric = () => {
               )
             }
           </Grid>
+        </Container>
+        <Container sx={{ display: {md: "none", sm: "block", xs: "block"}}}>
+          <Box>
+            <Box>
+              <Typography 
+                fontWeight={700}
+                fontSize="1.5rem"
+                lineHeight="3rem"
+                color="#1F284F"
+              >Our Product & Services</Typography>
+            </Box>
+            <Box>
+              <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" borderRadius="1rem">
+                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                  Clinical Trial Data Analysis
+                </Link>
+                <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
+                  <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
+                    View More
+                  </Link>
+                </Box>
+              </Box>
+              <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" marginTop="1rem" borderRadius="1rem">
+                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                  Biostatistics
+                </Link>
+                <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
+                  <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
+                    View More
+                  </Link>
+                </Box>
+              </Box>
+              <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" marginTop="1rem" borderRadius="1rem">
+                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                Business Decision Support
+                </Link>
+                <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
+                  <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
+                    View More
+                  </Link>
+                </Box>
+              </Box>
+            </Box>
+          </Box>
         </Container>
       </Box>
   )
