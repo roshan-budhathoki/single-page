@@ -6,6 +6,7 @@ import WhyNumeric from './whyNumeric'
 import FounderMessage from './founderMessage'
 import OurPartner from './ourPartner'
 import OurProduct from './ourProduct'
+import OurNews from './ourNews'
 
 const Home = () => {
   useEffect(() => {
@@ -17,6 +18,7 @@ const Home = () => {
         <HeroSection />
         <WhyNumeric />
         <OurProduct />
+        <OurNews />
         <FounderMessage />
         <OurPartner />
         <Footer />

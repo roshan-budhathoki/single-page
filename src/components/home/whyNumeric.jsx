@@ -70,7 +70,7 @@ const WhyNumeric = () => {
             }
           </Grid>
         </Container>
-        <Container sx={{ display: {md: "none", sm: "block", xs: "block"}}}>
+        <Container sx={{ display: {md: "none", sm: "block", xs: "block"}, paddingLeft: {sm: "1rem", md: "3.5rem",  xs: "1rem"}}}>
           <Box>
             <Box>
               <Typography 
