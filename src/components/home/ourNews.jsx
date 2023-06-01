@@ -8,11 +8,11 @@ import Slider from 'react-slick';
 
 const OurNews = () => {
     const sliderRef = React.useRef(null);
-    const length = 5;
+    const length = 3;
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
     const handleNextClick = () => {
-        if(currentIndex < length - 3){
+        if(currentIndex < length - 2){
             setCurrentIndex((currentIndex) => currentIndex + 1);
         }
         sliderRef.current.slickNext();
@@ -30,6 +30,7 @@ const OurNews = () => {
         speed: 500,
         slidesToShow: 2,
         slidesToScroll: 1,
+        arrows: false,
     };
 
   return (
@@ -107,19 +108,19 @@ const OurNews = () => {
                     </Slider>
                     <Box width="100%" display="flex" flexDirection="row-reverse" marginTop="1rem">
                         <IconButton onClick={handleNextClick} sx={{  
-                                border: currentIndex === length - 3 ? "2px solid #898D95" : "2px solid #0070F0" , 
+                                border: currentIndex === length - 2 ? "2px solid #898D95" : "2px solid #0070F0" , 
                                 height: "2.7rem",
                                 zIndex: "10",
                             }}
-                            disabled={currentIndex === length - 3}
+                            disabled={currentIndex === length - 2}
                         >
-                            <ArrowForwardIcon sx={{ color: currentIndex === length - 3 ? "#898D95" : "#0070F0"  }}/>
+                            <ArrowForwardIcon sx={{ color: currentIndex === length - 2 ? "#898D95" : "#0070F0"  }}/>
                         </IconButton>
                         <IconButton onClick={handlePrevClick} sx={{  
                                 border: currentIndex === 0 ? "2px solid #898D95" : "2px solid #0070F0" , 
                                 height: "2.7rem",
                                 zIndex: "10",
-                                marginLeft: "1rem"
+                                marginRight: "2rem"
                             }}
                             disabled={currentIndex === 0}
                         >
