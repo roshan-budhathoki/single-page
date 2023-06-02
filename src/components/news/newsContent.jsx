@@ -74,17 +74,17 @@ const NewsContent = () => {
                     <Container>
                         <Box sx={{ display:"flex",}}>
                             <Box display={{ md: "flex", sm: "none", xs: "none" }}>
-                                <img src={news.imagePath} alt="new heading"/>
+                                <img src={news.imagePath} alt="new heading" height="160px" width="170px"/>
                             </Box>
                             <Box sx={{ 
                                 boxShadow: { sm: "0px 4px 4px rgba(0, 0, 0, 0.25)", xs: "0px 4px 4px rgba(0, 0, 0, 0.25)", md: "none" },
                                 background:{ sm: "#fff", md: "none", xs:"#fff"}, borderRadius: "1rem",
-                                paddingX: "2rem", paddingY:"1.25rem",
+                                paddingX: "1rem", paddingY:"1rem",
                                 display: "flex", flexDirection: "column"}}>
                                 <Link fontWeight="600" fontSize="1.25rem" href={news.path} fontFamily="Poppins" color="#000000">
                                 {news.newsHeading}
                                 </Link>
-                                <Link fontWeight="600" fontSize="1rem" marginTop="2rem" marginBottom={{ md: "0rem", sm: "1rem", xs: "1rem" }} href={news.path} fontFamily="Poppins">
+                                <Link fontWeight="600" fontSize="1rem" marginTop="1rem" marginBottom={{ md: "0rem", sm: "1rem", xs: "1rem" }} href={news.path} fontFamily="Poppins">
                                     View Article
                                 </Link>
                             </Box>
