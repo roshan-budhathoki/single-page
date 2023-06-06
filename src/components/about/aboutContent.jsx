@@ -71,6 +71,7 @@ const AboutContent = () => {
                     sx={{
                         display: {sm: "block", xs: "block", md: "none" },
                     }}
+                    className="slide-in-fwd-right"
                 >
                     <img src={FirstMobileAbout} alt="what we do profile"/>
                 </Box>
@@ -78,6 +79,7 @@ const AboutContent = () => {
                     sx={{
                         display: {sm: "none", xs: "none", md: "block" },
                     }}
+                    className="slide-in-fwd-right"
                 >
                     <img src={FirstAbout} alt="what we do profile"/>
                 </Box>
@@ -96,6 +98,7 @@ const AboutContent = () => {
                     sx={{
                         display: {sm: "none", xs: "none", md: "block" },
                     }}
+                    className="slide-in-fwd-left"
                 >
                     <img src={SecondAbout} alt="what we do profile"/>
                 </Box>
@@ -103,6 +106,7 @@ const AboutContent = () => {
                     sx={{
                         display: {sm: "block", xs: "block", md: "none" },
                     }}
+                    className="slide-in-fwd-left"
                 >
                     <img src={SecondMobileAbout} alt="what we do profile"/>
                 </Box>
