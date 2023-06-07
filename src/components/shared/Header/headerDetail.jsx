@@ -179,7 +179,7 @@ const Header = () => {
       <Box display="flex" justifyContent="space-between" bgcolor="#FAFBFC" paddingY="1rem" sx={{
         paddingX: { xs: "1rem", sm: "1rem", md : "2rem" } 
       }}> 
-        <Box sx={{ display: { md: "flex", sm: "none", xs: "none" } }} onClick={() => navigate('/')}>
+        <Box sx={{ display: { md: "flex", sm: "none", xs: "none" }, cursor: "pointer" }} onClick={() => navigate('/')}>
           <img src={companyLogo} alt="this is company logo" height="auto" width="208px" />
         </Box>
         <AppBar

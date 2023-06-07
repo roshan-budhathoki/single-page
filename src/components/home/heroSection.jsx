@@ -1,18 +1,88 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Typography, Box, styled, Container } from '@mui/material';
 import heroNimble from "../../assets/heroNimble.png";
 import ButtonComponent from '../utils/ButtonComponent';
 import { useNavigate } from 'react-router-dom';
+
+
+const CustomHeadingTypography = styled(Typography)({
+    fontWeight: 600,
+    
+    fontFamily: "Poppins",
+    color: "#1F284F",
+    textAlign: {md: "start", xs: "center", sm: "center"}
+})
+
+const HeroModal = (props) => {
+    const { data, content} = props;
+    const[showModal, setShowModal] = useState(true);
+
+    return (
+        <>
+            <Box id="modal-container" 
+                className={showModal ? "" : "four"}
+                onClick={() => setShowModal(!showModal)}
+            >
+                <Box className="modal-background">
+                    <Box className="modal">
+                        <Box
+                            borderRadius="16px" 
+                            width="18rem"
+                            height="8.5rem"
+                            sx={{
+                                background: "#fbfbfb80",
+                                border:"1px solid #c4c4c466",
+                            }}
+                            boxShadow="2px 2px 2px 1px grey"
+                        >
+                            <CustomHeadingTypography fontSize="1.5rem !important" textAlign="left" marginLeft="1.5rem" marginTop="2rem">{data}</CustomHeadingTypography>
+                            <Box display="flex" marginTop="1rem">
+                                <Box marginLeft="1.5rem" height="2rem" width=".2rem" bgcolor="#1F284F"></Box>
+                                <Typography fontSize="0.8rem" marginLeft="1.125rem"  alignItems="center" display="flex" fontWeight="400" fontFamily="Poppins">{content}</Typography>
+                            </Box>
+                        </Box>
+                    </Box>
+                </Box>
+            </Box>
+            <Box
+                borderRadius="16px" 
+                width="18rem"
+                height="8.5rem"
+                sx={{
+                    background: "#fbfbfb80",
+                    border:"1px solid #c4c4c466",
+                }}
+                boxShadow="2px 2px 2px 1px grey"
+                onClick={() => setShowModal(!showModal)}
+            >
+                <CustomHeadingTypography fontSize="1.5rem !important" marginLeft="1.5rem" marginTop="2.2rem">{data}</CustomHeadingTypography>
+                <Box display="flex" marginTop="1rem">
+                    <Box marginLeft="1.5rem" height="2rem" width=".2rem" bgcolor="#1F284F"></Box>
+                    <Typography fontSize="0.8rem" marginLeft="1.125rem"  alignItems="center" display="flex" fontWeight="400" fontFamily="Poppins">{content}</Typography>
+                </Box>
+            </Box>
+        </>
+    )
+}
+
 const HeroSection = () => {
-    const CustomHeadingTypography = styled(Typography)({
-        fontWeight: 600,
-        
-        fontFamily: "Poppins",
-        color: "#1F284F",
-        textAlign: {md: "start", xs: "center", sm: "center"}
-    })
 
     const navigate = useNavigate();
+
+    const heroData = [
+        {
+            data: 20,
+            content: "Happy Client"
+        },
+        {
+            data: 30,
+            content: "Successful Cases"
+        },
+        {
+            data: 6,
+            content: "Specialist"
+        }
+    ];
     
     return (
         <Container>
@@ -81,57 +151,14 @@ const HeroSection = () => {
                 </Box>
                 <Box marginTop="3.9rem" 
                     sx={{
-                        display: {xs: "none", sm: "none", md: "flex"}
+                        display: {xs: "none", sm: "none", md: "flex"},
                     }}
                     justifyContent="space-between" flexWrap="wrap">
-                    <Box
-                        borderRadius="16px" 
-                        width="18rem"
-                        height="8.5rem"
-                        sx={{
-                            background: "#fbfbfb80",
-                            border:"1px solid #c4c4c466",
-                        }}
-                        boxShadow="2px 2px 2px 1px grey"
-                    >
-                        <CustomHeadingTypography fontSize="1.5rem !important" marginLeft="1.5rem" marginTop="2.2rem">20</CustomHeadingTypography>
-                        <Box display="flex" marginTop="1rem">
-                            <Box marginLeft="1.5rem" height="2rem" width=".2rem" bgcolor="#1F284F"></Box>
-                            <Typography fontSize="0.8rem" marginLeft="1.125rem"  alignItems="center" display="flex" fontWeight="400" fontFamily="Poppins">Happy Client</Typography>
-                        </Box>
-                    </Box>
-                    <Box
-                        borderRadius="16px" 
-                        width="18rem"
-                        height="8.5rem"
-                        sx={{
-                            background: "#fbfbfb80",
-                            border:"1px solid #c4c4c466",
-                        }}
-                        boxShadow="2px 2px 2px 1px grey"
-                    >
-                        <CustomHeadingTypography fontSize="1.5rem !important" marginLeft="1.5rem" marginTop="2.2rem">30</CustomHeadingTypography>
-                        <Box display="flex" marginTop="1rem">
-                            <Box marginLeft="1.5rem" height="2rem" width=".2rem" bgcolor="#1F284F"></Box>
-                            <Typography fontSize="0.8rem" marginLeft="1.125rem"  alignItems="center" display="flex" fontWeight="400" fontFamily="Poppins">Successful Cases</Typography>
-                        </Box>
-                    </Box>
-                    <Box
-                        borderRadius="16px" 
-                        width="18rem"
-                        height="8.5rem"
-                        sx={{
-                            background: "#fbfbfb80",
-                            border:"1px solid #c4c4c466",
-                        }}
-                        boxShadow="2px 2px 2px 1px grey"
-                    >
-                        <CustomHeadingTypography fontSize="1.5rem !important" marginLeft="1.5rem" marginTop="2.2rem">6</CustomHeadingTypography>
-                        <Box display="flex" marginTop="1rem">
-                            <Box marginLeft="1.5rem" height="2rem" width=".2rem" bgcolor="#1F284F"></Box>
-                            <Typography fontSize="0.8rem" marginLeft="1.125rem"  alignItems="center" display="flex" fontWeight="400" fontFamily="Poppins">Specialist</Typography>
-                        </Box>
-                    </Box>
+                    {
+                        heroData.map((item, index) => 
+                            <HeroModal data={item.data} content={item.content} key={index} />
+                        )
+                    }
                 </Box>
             </Box>
         </Container>

@@ -57,6 +57,7 @@ const ServiceWeb = () => {
             <Box 
               width={{ md: "50%", sm: "100%", xs: "100%" }}
               bgcolor={ showClinical ?  "#F05C26" : "transparent" }  
+              sx={{ cursor: "pointer"}}
               color={ showClinical ? "#fff" : "#171819" } 
               borderRadius="10px" padding=".7rem" textAlign="center" 
               marginBottom="1rem"
@@ -70,6 +71,7 @@ const ServiceWeb = () => {
               width={{ md: "50%", sm: "100%", xs: "100%" }}
               bgcolor={ showClinical ? "transparent" : "#F05C26"  }  
               color={ showClinical ?  "#171819" : "#fff" }  
+              sx={{ cursor: "pointer"}}
               onClick={(e)=> { e.preventDefault(); setShowClinical(false)}}
               borderRadius="10px" padding=".7rem" textAlign="center" 
             >
