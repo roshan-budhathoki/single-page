@@ -112,15 +112,13 @@ const HeroSection = () => {
                             fontFamily: "Poppins",
                             color: "#575757",
                             marginTop: "2rem",
-                            width:  "30rem",
+                            width:  "29rem",
                             display: {sm: "none", xs: "none", md: "block" },
                         }}>
-                            We offer statistical programming services to biotechnology, healthcare, 
-                            biomedical and pharmaceutical companies across the globe. 
-                            Our services include <b>
-                                biostatistics, clinical programming, statistical reporting and 
-                                data analytics.
-                            </b>
+                            Supercharge your data-driven success with our comprehensive suite of services. 
+                            From <b>biostatistics</b> to <b>clinical programming, statistical reporting</b> to <b>data analytics</b>,
+                            we empower your business to make informed decisions and achieve remarkable results.
+
                         </Box>
 
                         {/* Mobile View  */}

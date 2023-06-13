@@ -129,11 +129,11 @@ const Footer = () => {
                 Numeric Mind
               </Typography>
               <CustomFooterTypography>
-                Numeric Mind is a statistical consulting company based in the USA and Nepal providing 
-                full statistical analysis services primarily to the clients from Biotech, Healthcare, 
-                and Pharmaceuticals industries.Numeric Mind also provides statistical solutions and 
-                training services to academic and research institutions, government and non-government 
-                organizations across the globe.
+              Numeric Mind, a top statistical consulting company in the USA and Nepal, 
+              offers comprehensive statistical analysis services to clients in Biotech, Healthcare, 
+              and Pharmaceuticals. We also provide statistical solutions, training services to academic, 
+              research institutions, 
+              and global government/non-government organizations. Contact us for data-driven insights.
               </CustomFooterTypography>
             </Grid>
             <Grid item lg={4} md={4} sx={{

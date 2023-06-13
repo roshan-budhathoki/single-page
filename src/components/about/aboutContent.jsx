@@ -35,9 +35,9 @@ const AboutContent = () => {
                     width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                     marginTop="1rem"
                 >
-                    Numeric Mind is a statistical consulting company providing 
-                    full statistical analysis services primarily to the clients from Biotech, Healthcare, and Pharmaceuticals industries. Numeric Mind also provides statistical solutions and training services to academic and research institutions, 
-                    government and non-government organizations across the globe.
+                    Numeric Mind is a leading statistical consulting company specializing in 
+                    full statistical analysis services for Biotech, Healthcare, and Pharmaceuticals. We also offer statistical solutions and training to academic, research institutions, 
+                    and global government/non-government organizations. Unlock data-driven insights with us.
                 </Typography>
             </Box>
 
@@ -63,8 +63,14 @@ const AboutContent = () => {
                         lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                         width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
                         marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
-                        Numeric Mind offers statistical solutions and data analytics services in an array of industries including but not limited to Healthcare, Pharmaceuticals, Biotech and Banking sectors. Although we work with data in many areas, our primary focus remains Biostatistics and Clinical Data Analytics. We further provide consultations for data analytics services in sectors such as Banking, Insurance, 
-                        Telecom, Agribusiness, and are always looking to expand our horizons.
+                        Numeric Mind delivers comprehensive statistical solutions and data analytics services 
+                        across diverse industries like Healthcare, Pharmaceuticals, Biotech, and Banking. With
+                         expertise in Biostatistics and Clinical Data Analytics, we also provide consultations
+                          for sectors including Banking, Insurance, Telecom, and Agribusiness. Join us as we 
+                          continuously broaden our horizons. We excel in data analysis, extracting valuable insights
+                           and empowering businesses to make data-driven decisions. We leverage our expertise to collect, 
+                           organize, and analyze data, extracting actionable insights 
+                        that drive informed decision-making and business growth for our clients.
                     </CustomAboutDiscription>
                 </Box>
                 <Box
@@ -123,17 +129,13 @@ const AboutContent = () => {
                         width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
                         marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                         >
-                    We are a team of highly experienced data scientists, 
-                    biostatisticians, business analysts and clinical analysts 
-                    based in Kathmandu, Nepal and USA. With our highly skilled 
-                    and trained resources, we are able to deliver statistical 
-                    and analytical services 
-                    tailored to your specific business needs and requests.
-                    In Numeric Mind, we believe a balance is required between expertise and 
-                        passion in the work environment to allow the company to move forward. 
-                    Therefore, Numeric Mind comprises of experienced individuals as well as
-                        enthusiastic and passionate team members in different streams, who are
-                    dedicated towards the company goals and future of Numeric Mind.
+                    Numeric Mind is a distinguished team of data scientists, biostatisticians, business analysts,
+                     and clinical analysts based in Kathmandu, Nepal, and the USA. Our skilled resources deliver 
+                     customized statistical and analytical services to meet your unique business requirements. At 
+                     Numeric Mind, we value a harmonious blend of expertise and passion, fostering an environment that 
+                     propels our company forward. Our experienced professionals and enthusiastic team members from various
+                      domains are dedicated to achieving the goals and shaping the future of Numeric Mind. 
+                    Trust us for exceptional data-driven solutions that drive your business growth.
                     </CustomAboutDiscription>
                 </Box>
                 
@@ -146,16 +148,14 @@ const AboutContent = () => {
                     Tools we use
                 </CustomAboutUs>
                 <CustomAboutDiscription
-                    width={{md: "60rem", sm: "17.5rem", xs: "17.5rem"}}
+                    width={{md: "67rem", sm: "17.5rem", xs: "17.5rem"}}
                     fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                     textAlign="center" 
                     marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                     >
-                    In Numeric Mind, we use cutting edge data science tools 
-                    and technologies to deliver our client’s needs. 
-                    To work with large datasets, we use SAS, R and Python. 
-                    For data visualization and dashboards, we also use Tableau 
-                    and Microsoft Power BI as per your need.
+                    Numeric Mind leverages state-of-the-art data science tools and technologies to meet client requirements. 
+                    We employ SAS, R, and Python for processing large datasets, while Tableau and Microsoft Power 
+                    BI are utilized for data visualization and dynamic dashboards tailored to your specific needs.
                 </CustomAboutDiscription>
             </Box>
         </Box>

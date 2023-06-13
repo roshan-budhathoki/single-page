@@ -14,23 +14,38 @@ const NewsContent = () => {
     const newsList = [
         {
             newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
-            path: "#",
+            path: "https://numericmind.com/scientists-reverse-engineer-mrna-sequence-of-moderna-vaccine/",
             imagePath: newsPicture
         },
         {
-            newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
-            path: "#",
+            newsHeading: "New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial", 
+            path: "https://numericmind.com/new-malaria-vaccine-shows-most-efficacy-of-any-to-date-small-trial/",
+            imagePath: newsPicture2
+        },
+        {
+            newsHeading: "COVID-19 Vaccine Combos Aim to Boost Immunity", 
+            path: "https://numericmind.com/covid-19-vaccine-combos-aim-to-boost-immunity/",
             imagePath: newsPicture
         },
         {
-            newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
-            path: "#",
+            newsHeading: "NIH Halts Outpatient COVID-19 Convalescent Plasma Trial", 
+            path: "https://numericmind.com/nih-halts-outpatient-covid-19-convalescent-plasma-trial/",
             imagePath: newsPicture2
         },
         {
-            newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
-            path: "#",
+            newsHeading: "Q&A: New Trials Tackle COVID-19 Vaccines in Pregnancy", 
+            path: "https://numericmind.com/qa-new-trials-tackle-covid-19-vaccines-in-pregnancy/",
+            imagePath: newsPicture
+        },
+        {
+            newsHeading: "High Risk of Bias in Early COVID-19 Studies: Meta-Analysis", 
+            path: "https://numericmind.com/high-risk-of-bias-in-early-covid-19-studies-meta-analysis/",
             imagePath: newsPicture2
+        },
+        {
+            newsHeading: "Eli Lilly Claims New Drug Can Slow Alzheimer’s-Related Decline", 
+            path: "https://numericmind.com/eli-lilly-claims-new-drug-can-slow-alzheimers-related-decline/",
+            imagePath: newsPicture
         },
     ]
   return (
@@ -57,12 +72,9 @@ const NewsContent = () => {
                 width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                 marginTop="1rem"
                 >
-                Numeric Mind is a statistical consulting company providing full
-                statistical analysis services primarily to the clients from Biotech,
-                Healthcare, and Pharmaceuticals industries. Numeric Mind also provides
-                statistical solutions and training services to academic and research
-                institutions, government and non-government organizations across the
-                globe.
+                Stay updated with the latest news and events in the data analytics industry with Numeric Mind. 
+                Discover valuable insights, trends, and advancements through our informative 
+                articles and participate in exciting events that shape the future of data analysis.
             </Typography>
         </Box>
             <Grid container spacing={{ xs: 2 }} columns={{ xs: 4, sm: 8, md: 12 }} marginBottom={{md: "4rem", sm: "2rem", xs: "2rem" }} marginTop="2rem !important">

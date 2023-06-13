@@ -13,32 +13,32 @@ const WhyNumeric = () => {
     {
       icon: <LocalPoliceIcon />,
       name: "Quality",
-      description: "We believe in providing quality data analysis and statistical solutions for any concept, from its formulation to its commercialization."
+      description: "Experience unparalleled quality in Data Analytics Services at Numeric Mind. Our meticulous approach ensures accurate insights and reliable solutions for data-driven success."
     },
     {
       icon: <VerifiedIcon />,
       name: "Reliability",
-      description: "Building solid, long-lasting relationships with our clients is one of our main goals at Numeric Mind."
+      description: "Your reliable partner for Data Analytics Services. Trust our expertise, robust methodologies, and accurate insights to drive confident decision-making and business growth."
     },
     {
       icon: <AttachMoneyIcon />,
       name: "Economical",
-      description: "Depending on the needs of the client, we guarantee the best costs for our services."
+      description: "Choose Numeric Mind for cost-effective Data Analytics Services. We offer competitive pricing without compromising on quality, delivering maximum value for your investment."
     },
     {
       icon: <AutoAwesomeIcon />,
       name: "Innovation",
-      description: "The Numeric Mind team is well-equipped with data analytics and statistical tools including R, SAS, Python and Tableau for resolving your problems."
+      description: "Experience cutting-edge innovation in Data Analytics Services. Our tools empower you to uncover valuable insights and stay ahead in the competitive landscape."
     },
     {
       icon: <VisibilityIcon />,
       name: "Transparency",
-      description: "We believe being open, honest, and transparent regarding the company operations with our teams and utmost importance for establishing a harmonious relationship."
+      description: "Your transparent partner in Data Analytics Services. We believe in open communication, providing clear insights, and fostering trust for a mutually beneficial partnership."
     }, 
     {
       icon: <FingerprintIcon />,
       name: "Privacy",
-      description: "Numeric Mind has secure privacy policies that ensure no misuse or exposure of data to sources other than the client and the company."
+      description: "Our Data Analytics Services are backed by robust security measures, ensuring your information remains confidential and protected throughout the analysis process."
     }
   ]
 
@@ -70,14 +70,16 @@ const WhyNumeric = () => {
             {
               questionNumeric.map((question, index) => 
               <Grid item xs={12} sm={12} md={4} key={index} sx={{
-                marginTop: "1rem"
+                marginTop: "1rem",
               }}>
                 <>
-                  <Box className="flip-card" sx={{display: { md: "block", xs: "none", sm: "none" }}}>
+                  <Box className="flip-card" sx={{
+                      display: { md: "block", xs: "none", sm: "none" },
+                    }}>
                     <Box className="flip-card-inner" sx={{ borderRadius: "1rem" }}>
                       <Box className="flip-card-front" sx={{
-                        background: "#F05C26", 
                         borderRadius: "1rem", 
+                        background: "linear-gradient(180deg, #F4762D 0%, #F9BC2C 100%)",
                         color: "#fff"}} 
                         display="flex" justifyContent="center" alignItems="center" flexDirection="column" >
                         <Typography fontWeight={700} fontSize="2rem" lineHeight="3rem" textTransform="uppercase"> 
