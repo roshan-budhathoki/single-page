@@ -62,7 +62,7 @@ const WhyNumeric = () => {
             fontSize="1.5rem" 
             marginY="1.2rem"
             >
-          A Trusted Statistical Consulting Company based in USA and Nepal consisting of highly 
+          A Trusted Statistical Data Solution Company based in USA and Nepal consisting of highly 
           experienced data scientists, biostatisticians, business analysts and clinical analysts.
           </Typography>
           <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} marginBottom="4rem">
@@ -79,7 +79,7 @@ const WhyNumeric = () => {
                     <Box className="flip-card-inner" sx={{ borderRadius: "1rem" }}>
                       <Box className="flip-card-front" sx={{
                         borderRadius: "1rem", 
-                        background: "linear-gradient(180deg, #F4762D 0%, #F9BC2C 100%)",
+                        background: index > 2 ? "linear-gradient(180deg, #F9BC2C 0%, #F4762D 100%)" : "linear-gradient(180deg, #F4762D 0%, #F9BC2C 100%)" ,
                         color: "#fff"}} 
                         display="flex" justifyContent="center" alignItems="center" flexDirection="column" >
                         <Typography fontWeight={700} fontSize="2rem" lineHeight="3rem" textTransform="uppercase"> 

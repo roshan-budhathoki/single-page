@@ -217,9 +217,15 @@ const Footer = () => {
                 </ListItem>
                 <ListItem disablePadding>
                   <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" justifyContent="center" width="100%" paddingY= ".5rem"> 
-                    <FacebookIcon />
-                    <TwitterIcon sx={{ marginX: "1rem"}} />
-                    <InstagramIcon />
+                    <Link sx={{color: "black"}} href="https://www.facebook.com/numericmind">
+                      <FacebookIcon />
+                    </Link>
+                    <Link sx={{color: "black"}} href="https://twitter.com/numericmind"> 
+                      <TwitterIcon sx={{ marginX: "1rem"}} />
+                    </Link>
+                    <Link sx={{color: "black"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
+                      <InstagramIcon  />
+                    </Link>
                   </Box>
                 </ListItem>
               </List>
@@ -237,9 +243,15 @@ const Footer = () => {
           }}>
             <CustomFooterTypography>Numeric Mind 2023. All rights reserved</CustomFooterTypography>
             <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="space-between" width="8rem"> 
-              <FacebookIcon />
-              <TwitterIcon />
-              <InstagramIcon />
+              <Link sx={{color: "black"}} href="https://www.facebook.com/numericmind">
+                <FacebookIcon />
+              </Link>
+              <Link sx={{color: "black"}} href="https://twitter.com/numericmind"> 
+                <TwitterIcon />
+              </Link>
+              <Link sx={{color: "#515458"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
+                <InstagramIcon  />
+              </Link>
             </Box>
           </Box>
         </Container>

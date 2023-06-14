@@ -121,7 +121,7 @@ const AboutContent = () => {
                         fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
                         marginTop={{ sm: "1rem", xs: "1rem" }}
                     >
-                        What we Are?
+                        Who we Are?
                     </CustomAboutUs>
                     <CustomAboutDiscription 
                         fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
