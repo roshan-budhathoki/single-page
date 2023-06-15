@@ -1,6 +1,13 @@
 import React from 'react';
 import { Typography, Box, styled, Container } from '@mui/material';
-import heroNimble from "../../assets/heroNimble.png";
+
+import heroLogo1 from "../../assets/heroLogo1.png";
+import heroLogo2 from "../../assets/heroLogo2.png";
+import heroLogo3 from "../../assets/heroLogo3.png";
+import heroLogo4 from "../../assets/heroLogo4.png";
+import heroLogo5 from "../../assets/heroLogo5.png";
+import heroLogoMain from "../../assets/heroLogoMain.png";
+
 import ButtonComponent from '../utils/ButtonComponent';
 import { useNavigate } from 'react-router-dom';
 
@@ -76,8 +83,25 @@ const HeroSection = () => {
                             Learn More
                         </ButtonComponent>
                     </Box>
-                    <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}}>
-                        <img src={heroNimble} height= "440px" width="473px" alt="heroImage Section" />
+                    <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} position="relative">
+                        <Box className="fade-in-bl">
+                            <img src={heroLogoMain}  alt="hero section" style={{ position: "absolute" }}/>
+                        </Box>
+                        <Box className="fade-in-fwd">
+                            <img src={heroLogo1} alt="hero section" style={{ marginBottom: "1rem"}} />
+                        </Box>
+                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                            <img src={heroLogo2} alt="hero section" />
+                        </Box>
+                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                            <img src={heroLogo3} alt="hero section" />
+                        </Box>
+                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                            <img src={heroLogo4} alt="hero section" />
+                        </Box>
+                        <Box className="firstImage1" style={{ position: "absolute" }}>
+                            <img src={heroLogo5} alt="hero section"/>
+                        </Box>
                     </Box>
                 </Box>
             </Box>
