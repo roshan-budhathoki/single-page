@@ -36,13 +36,16 @@ const FounderMessage = () => {
                             fontSize: { xs: "0.8rem", sm: "0.8rem", md: "1.25rem" }
                         }}
                     >
-                        I'm <b>Hemanta Shrestha</b>. I've worked as a data scientist and an economist for more than 20 years in predictive modelling, customer analytics, marketing analytics,
-                        business analytics, data mining and financial planning. Having worked in the USA at notable telecom companies such as AT&T, Virgin Mobile & Nokia, I've acquired a 
-                        lot of working experience on data science. 
-                        I believe it's high time to give back to the community and help the new generation of aspiring data scientists to hone their skills and gain expertise in the field of data science.
+                        My name is <b>Dr. Hemanta Shrestha, </b> and I have dedicated over two decades to the fields 
+                        of data science, statistics, and business analytics. Throughout my career, I have acquired 
+                        extensive experience in statistical and financial modeling, corporate strategy and planning, 
+                        and business decision support. With a focus on data analytics and statistical modeling, 
+                        I have worked for esteemed companies such as AT&T, Virgin Mobile, and Nokia in the United States, 
+                        refining my data and analytical skills. Currently, I am thrilled to 
+                        lead NumericMind, a rapidly growing clinical programming and data analytics service company. 
                     </CustomDiscriptionTypography>
                     <ButtonComponent width="13rem" bgcolor="#F05C26">
-                        Schedule a Meeting
+                        Read More
                     </ButtonComponent>
                 </Box>
             </Box>

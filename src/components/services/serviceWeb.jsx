@@ -59,7 +59,6 @@ const ServiceWeb = () => {
               sx={{ cursor: "pointer"}}
               color={ showClinical ? "#fff" : "#171819" } 
               borderRadius="10px" padding=".7rem" textAlign="center" 
-              marginBottom="1rem"
               onClick={(e) =>{ e.preventDefault(); setShowClinical(true)}}
             >
               <CustomServiceTypography>

@@ -1,14 +1,14 @@
 import React from 'react'
 import { Container, Typography, Box, Link, IconButton } from '@mui/material'
 
-import newMobileLogo from "../../assets/newsSample2.png"
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import Slider from 'react-slick';
+import { newsList } from '../news/newsContent';
 
 const OurNews = () => {
     const sliderRef = React.useRef(null);
-    const length = 3;
+    const length = 7;
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
     const handleNextClick = () => {
@@ -51,60 +51,28 @@ const OurNews = () => {
                 </Box>
                 <Container sx={{paddingTop: "2rem"}}>
                     <Slider ref={sliderRef} {...settings}>
-                        <Box display="flex !important">
-                            <Box>
-                                <img src={newMobileLogo} alt="news section" />
-                            </Box>
-                            <Box width="22rem" marginLeft="1rem">
-                                <Typography fontWeight={600} fontSize="1.125rem" >
-                                    New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial
-                                </Typography>
-                                <Typography fontSize="1rem" fontWeight={400} marginTop=".5rem">
-                                    We’re a team made up of individuals, several with unconventional career paths military ...   
-                                </Typography>
-                                <Box marginTop="1rem">
-                                    <Link href="#">
-                                        Visit Link
-                                    </Link>
+                        {
+                            newsList.map((news, index) => 
+                                <Box display="flex !important" key={index}>
+                                    <Box>
+                                        <img src={news.imagePath} alt="news section" />
+                                    </Box>
+                                    <Box width="22rem" marginLeft="1rem">
+                                        <Typography fontWeight={600} fontSize="1.125rem" >
+                                            {news.newsHeading}
+                                        </Typography>
+                                        <Typography fontSize="1rem" fontWeight={400} marginTop=".5rem">
+                                            We’re a team made up of individuals, several with unconventional career paths military ...   
+                                        </Typography>
+                                        <Box marginTop="1rem">
+                                            <Link href={news.path} >
+                                                Visit Link
+                                            </Link>
+                                        </Box>
+                                    </Box>
                                 </Box>
-                            </Box>
-                        </Box>
-                        <Box display="flex !important">
-                            <Box>
-                                <img src={newMobileLogo} alt="news section" />
-                            </Box>
-                            <Box width="22rem" marginLeft="1rem">
-                                <Typography fontWeight={600} fontSize="1.125rem" >
-                                    New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial
-                                </Typography>
-                                <Typography fontSize="1rem" fontWeight={400} marginTop=".5rem">
-                                    We’re a team made up of individuals, several with unconventional career paths military ...   
-                                </Typography>
-                                <Box marginTop="1rem">
-                                    <Link href="#">
-                                        Visit Link
-                                    </Link>
-                                </Box>
-                            </Box>
-                        </Box>
-                        <Box display="flex !important">
-                            <Box>
-                                <img src={newMobileLogo} alt="news section" />
-                            </Box>
-                            <Box width="22rem" marginLeft="1rem">
-                                <Typography fontWeight={600} fontSize="1.125rem" >
-                                    New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial
-                                </Typography>
-                                <Typography fontSize="1rem" fontWeight={400} marginTop=".5rem">
-                                    We’re a team made up of individuals, several with unconventional career paths military ...   
-                                </Typography>
-                                <Box marginTop="1rem">
-                                    <Link href="#">
-                                        Visit Link
-                                    </Link>
-                                </Box>
-                            </Box>
-                        </Box>
+                            )
+                        }
                     </Slider>
                     <Box width="100%" display="flex" flexDirection="row-reverse" marginTop="1rem">
                         <IconButton onClick={handleNextClick} sx={{  

@@ -158,6 +158,42 @@ const AboutContent = () => {
                     BI are utilized for data visualization and dynamic dashboards tailored to your specific needs.
                 </CustomAboutDiscription>
             </Box>
+            <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" marginBottom={{md: "2rem"}} >
+                <CustomAboutUs
+                    fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
+                    marginTop={{ sm: "1rem", xs: "1rem", md: "2rem" }}
+                >
+                    Word From Our CEO & Co-Founder 
+                </CustomAboutUs>
+                <CustomAboutDiscription
+                    width={{md: "67rem", sm: "17.5rem", xs: "17.5rem"}}
+                    fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
+                    marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
+                    >
+                        At NumericMind, we have assembled a talented team of over 60 skilled developers and data scientists.
+                        Together, we provide a wide range of statistical and data analytics solutions at highly competitive 
+                        prices.
+                        Our services encompass various aspects of data analysis, statistical modeling, and business intelligence. 
+                        We specialize in clinical programming, leveraging data to support clinical research and provide valuable 
+                        insights to the healthcare industry. With our expertise, we help organizations unlock the potential of 
+                        their data, enabling evidence-based decision-making and driving innovation.
+                        <br />
+                        NumericMind takes pride in its commitment to excellence, delivering high-quality solutions tailored to meet 
+                        the unique needs of each client. We understand the importance of accuracy, reliability, and efficiency in data 
+                        analytics, and we strive to exceed expectations in every project we undertake. By leveraging advanced analytics
+                        techniques, cutting-edge technologies, and a deep understanding of industry dynamics, we empower our clients 
+                        to extract valuable insights from their data.
+                        <br />
+                        Our goal is not just to provide data analytics services but to establish long-term partnerships with our clients. 
+                        We believe in collaboration and actively engage with our clients to understand their objectives, challenges, and 
+                        requirements. This enables us to deliver tailored solutions that address their specific needs and generate actionable 
+                        results.
+                        <br />
+                        In conclusion, NumericMind, under my leadership, is dedicated to providing exceptional clinical programming and data 
+                        analytics services. With our experienced team and a commitment to delivering value, we are well-positioned to support 
+                        organizations in their data-driven journey and help them achieve their business objectives.
+                </CustomAboutDiscription>
+            </Box>
         </Box>
     </Container>
   )
