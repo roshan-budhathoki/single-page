@@ -3,15 +3,15 @@ import { Box, Typography, TextField, Container } from '@mui/material'
 
 import Eclipse from '../../assets/eclipse.png';
 import Cambridge from '../../assets/Cambridge.png';
-import MobileCambridge from '../../assets/mobileUniversity.png';
 import Microsoft from '../../assets/Microsoft.png';
-import MobileMicrosoft from '../../assets/mobileMicrosoft.png';
 import Standford from '../../assets/Standford.png';
-import MobileStandford from '../../assets/mobileGoogle.png'
 import MenuDesign from '../../assets/MenuDesign.png';
 import ButtonComponent from '../utils/ButtonComponent';
+import MobileStandford from '../../assets/mobileGoogle.png'
 import ContactBelows from '../../assets/ContactBelows.png';
 import FormTopCircle from '../../assets/formTopCircle.png';
+import MobileMicrosoft from '../../assets/mobileMicrosoft.png';
+import MobileCambridge from '../../assets/mobileUniversity.png';
 import { CustomDiscriptionTypography, CustomHeadingTypography } from '../utils/CustomTypography'
 
 const OurPartner = () => {
