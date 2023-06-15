@@ -7,45 +7,51 @@ import {
     Link
   } from "@mui/material";
 import { CustomServiceHeading,  } from "../utils/CustomTypography";
-import newsPicture from "../../assets/newsSample.png";
-import newsPicture2 from "../../assets/newsSample2.png";
-  
+
+import news1 from "../../assets/news1.png";
+import news2 from "../../assets/news2.png";
+import news3 from "../../assets/news3.png";
+import news4 from "../../assets/news4.png";
+import news5 from "../../assets/news5.png";
+import news6 from "../../assets/news6.png";
+import news7 from "../../assets/news7.png";
+
 const NewsContent = () => {
     const newsList = [
         {
             newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
             path: "https://numericmind.com/scientists-reverse-engineer-mrna-sequence-of-moderna-vaccine/",
-            imagePath: newsPicture
+            imagePath: news1
         },
         {
             newsHeading: "New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial", 
             path: "https://numericmind.com/new-malaria-vaccine-shows-most-efficacy-of-any-to-date-small-trial/",
-            imagePath: newsPicture2
+            imagePath: news2
         },
         {
             newsHeading: "COVID-19 Vaccine Combos Aim to Boost Immunity", 
             path: "https://numericmind.com/covid-19-vaccine-combos-aim-to-boost-immunity/",
-            imagePath: newsPicture
+            imagePath: news3
         },
         {
             newsHeading: "NIH Halts Outpatient COVID-19 Convalescent Plasma Trial", 
             path: "https://numericmind.com/nih-halts-outpatient-covid-19-convalescent-plasma-trial/",
-            imagePath: newsPicture2
+            imagePath: news4
         },
         {
             newsHeading: "Q&A: New Trials Tackle COVID-19 Vaccines in Pregnancy", 
             path: "https://numericmind.com/qa-new-trials-tackle-covid-19-vaccines-in-pregnancy/",
-            imagePath: newsPicture
+            imagePath: news5
         },
         {
             newsHeading: "High Risk of Bias in Early COVID-19 Studies: Meta-Analysis", 
             path: "https://numericmind.com/high-risk-of-bias-in-early-covid-19-studies-meta-analysis/",
-            imagePath: newsPicture2
+            imagePath: news6
         },
         {
             newsHeading: "Eli Lilly Claims New Drug Can Slow Alzheimer’s-Related Decline", 
             path: "https://numericmind.com/eli-lilly-claims-new-drug-can-slow-alzheimers-related-decline/",
-            imagePath: newsPicture
+            imagePath: news7
         },
     ]
   return (

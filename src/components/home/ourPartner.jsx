@@ -44,10 +44,10 @@ const OurPartner = () => {
               </CustomHeadingTypography>
 
               <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="center" paddingY="3rem" marginBottom="4rem">
-                <Box width = "50%" justifyContent="space-between" display="flex" alignItems="center">
-                  <img src={Standford} alt="standford Profile" height="40px" width="88px"/>
-                  <img src={Cambridge} alt="cambridge Profile" height="24px" width="118px"/>
-                  <img src={Microsoft} alt="microsoft Profile" height="24px" width="116px"/>
+                <Box width = "40rem" justifyContent="space-between" display="flex" alignItems="center">
+                  <img src={Standford} alt="standford Profile"/>
+                  <img src={Cambridge} alt="cambridge Profile" />
+                  <img src={Microsoft} alt="microsoft Profile" />
                 </Box>
               </Box>
               <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" paddingY="2rem" marginBottom=".5rem">

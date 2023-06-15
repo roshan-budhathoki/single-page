@@ -126,7 +126,7 @@ const Footer = () => {
               display: { xs : "none", sm: "none", md: "block"}
             }}>
               <Typography fontWeight="700" fontFamily="Poppins" fontSize="2.25rem">
-                Numeric Mind
+                NumericMind
               </Typography>
               <CustomFooterTypography>
               Numeric Mind, a top statistical consulting company in the USA and Nepal, 

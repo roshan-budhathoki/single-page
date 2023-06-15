@@ -16,6 +16,7 @@ import SingleCareer from './components/career/SingleCareer';
 
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
+import Teams from './components/teams/teamDetails';
 
 const router = createBrowserRouter([
   {
@@ -34,6 +35,10 @@ const router = createBrowserRouter([
     path: "/careers",
     element: <Career />
   },
+  {
+    path: "/teams",
+    element: <Teams />
+  }, 
   {
     path: "/careers/:id",
     element: <SingleCareer />

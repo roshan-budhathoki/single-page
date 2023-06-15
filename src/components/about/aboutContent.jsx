@@ -79,7 +79,7 @@ const AboutContent = () => {
                     }}
                     className="slide-in-fwd-right"
                 >
-                    <img src={FirstMobileAbout} alt="what we do profile"/>
+                    <img src={SecondMobileAbout} alt="what we do profile"/>
                 </Box>
                 <Box
                     sx={{
@@ -114,7 +114,7 @@ const AboutContent = () => {
                     }}
                     className="slide-in-fwd-left"
                 >
-                    <img src={SecondMobileAbout} alt="what we do profile"/>
+                    <img src={FirstMobileAbout} alt="what we do profile"/>
                 </Box>
                 <Box>
                     <CustomAboutUs

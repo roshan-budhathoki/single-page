@@ -52,7 +52,7 @@ const WhyNumeric = () => {
               fontSize: {xs: "1.5rem", sm: "1.5rem", md: "2.5rem"}
             }}
           >
-            Why Numeric Mind?
+            Why NumericMind?
           </Typography>
           <Typography fontWeight="500" fontFamily="Poppins" 
             sx={{
