@@ -4,8 +4,10 @@ import ButtonComponent from "../utils/ButtonComponent";
 import founderProfile from "../../assets/founderMessage.png";
 import founderMobileProfile from "../../assets/founderMessageMobile.png";
 import { CustomDiscriptionTypography, CustomHeadingTypography } from "../utils/CustomTypography";
+import { useNavigate } from "react-router-dom";
 
 const FounderMessage = () => {
+    const navigate  = useNavigate();
     return (
         <Container>
             <Box sx={{ 
@@ -44,7 +46,7 @@ const FounderMessage = () => {
                         refining my data and analytical skills. Currently, I am thrilled to 
                         lead NumericMind, a rapidly growing clinical programming and data analytics service company. 
                     </CustomDiscriptionTypography>
-                    <ButtonComponent width="13rem" bgcolor="#F05C26">
+                    <ButtonComponent width="13rem" bgcolor="#F05C26" onClick={() => navigate('/about/wordFromCeo')}>
                         Read More
                     </ButtonComponent>
                 </Box>

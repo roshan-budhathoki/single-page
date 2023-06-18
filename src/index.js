@@ -17,6 +17,7 @@ import SingleCareer from './components/career/SingleCareer';
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Teams from './components/teams/teamDetails';
+import { SnackbarProvider } from 'notistack';
 
 const router = createBrowserRouter([
   {
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
   },
   {
     path: "/about",
+    element: <About />
+  },
+  {
+    path: "/about/:id",
     element: <About />
   },
   {
@@ -60,9 +65,11 @@ const theme = createTheme({
 
 root.render(
   <React.StrictMode>
-    <ThemeProvider theme={theme}>
-      <RouterProvider router={router} />
-    </ThemeProvider>
+    <SnackbarProvider anchorOrigin={{ vertical: 'top', horizontal: 'right'}}>
+      <ThemeProvider theme={theme}>
+        <RouterProvider router={router} />
+      </ThemeProvider>
+    </SnackbarProvider>
   </React.StrictMode>
 );
 

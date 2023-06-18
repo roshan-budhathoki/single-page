@@ -1,4 +1,6 @@
-import React from 'react'
+import axios from 'axios';
+import React, { useState } from 'react'
+import { useSnackbar } from 'notistack';
 import { Box, Typography, TextField, Container } from '@mui/material'
 
 import Eclipse from '../../assets/eclipse.png';
@@ -19,7 +21,42 @@ const OurPartner = () => {
     marginBottom: "1.5rem", 
     color: "#B7BFC7", 
     borderRadius: "10px"
-  } 
+  }
+  const { enqueueSnackbar } = useSnackbar();
+  
+  const [fullName, setFullName] = useState(null);
+  const [contactNumber, setContactNumber] = useState(null);
+  const [email, setEmail] = useState(null);
+
+
+  const handleContact = () => {
+    if(fullName === '' || contactNumber === '' || email === '' ){
+      enqueueSnackbar("Please fill all the filled", {
+        variant: 'error',
+      })
+      return
+    }
+    if(fullName === null || contactNumber === null || email === null ){
+      enqueueSnackbar("Please fill all the field", {
+        variant: 'error',
+      })
+      return
+    }
+
+    axios.post('https://sansshrestha.com.np/sendEmail', {
+        fullName,
+        contactNumber,
+        email
+    }).then(() => {
+      enqueueSnackbar("Thank you for your time", {
+        variant: 'success',
+      })
+      setContactNumber('');
+      setEmail('');
+      setFullName('');
+    });
+  }
+
   return (
       <Box position="relative" sx={{
           backgroundImage: "linear-gradient(to right bottom, #f3f1fe, #f0f3ff, #eef4fe, #eef6fd, #eef7fc)",
@@ -87,6 +124,11 @@ const OurPartner = () => {
                         Contact Us
                       </CustomHeadingTypography>
                       <TextField id="outlined-basic" 
+                        value={fullName ?? ''}
+                        onChange={(event) =>  { 
+                          event.preventDefault();
+                          setFullName(event.target.value);
+                        }}
                         InputProps={{
                           sx: {
                             '&:hover fieldset': {
@@ -100,7 +142,12 @@ const OurPartner = () => {
                           },
                         }}
                         fullWidth label="Enter your name" variant="outlined" sx={textFieldStyle} />
-                      <TextField id="outlined-basic" fullWidth label="Enter your number"
+                      <TextField id="outlined-basic" type="number" fullWidth label="Enter your number"
+                        onChange={(event) => {
+                          event.preventDefault();  
+                          setContactNumber(event.target.value);
+                        }}
+                        value={contactNumber ?? ''}
                         InputProps={{
                           sx: {
                             '&:hover fieldset': {
@@ -117,7 +164,12 @@ const OurPartner = () => {
                           },
                         }}
                         variant="outlined" sx={textFieldStyle}/>
-                      <TextField id="outlined-basic" fullWidth label="Enter your email address" variant="outlined"
+                      <TextField id="outlined-basic" type="email" fullWidth label="Enter your email address" variant="outlined"
+                        value={email ?? ''}
+                        onChange={(event) => { 
+                          event.preventDefault();
+                          setEmail(event.target.value);
+                        }}
                         InputProps={{
                           sx: {
                             '&:hover fieldset': {
@@ -131,7 +183,7 @@ const OurPartner = () => {
                           },
                         }}
                       sx={textFieldStyle}/>
-                      <ButtonComponent width="8.5rem" bgcolor="#FFCC00">
+                      <ButtonComponent width="8.5rem" bgcolor="#FFCC00" onClick={handleContact}>
                         Submit
                       </ButtonComponent>
                     </Box>
