@@ -103,7 +103,11 @@ const Header = () => {
     {
       name: "Services",
       path: "/services"
-    }
+    },
+    {
+      name: "Galleries",
+      path: "/galleries"
+    },
   ]
 
   const MobileMenu = () => (
@@ -221,13 +225,17 @@ const Header = () => {
             </SwipeableDrawer>
           </Toolbar>
         </AppBar>
-        <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} width="20rem" justifyContent="space-between">
+        <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} width="25rem" justifyContent="space-between">
           <CustomMenuTypography href="/about" sx={{ color: pathname === "/about" ? "#F05C26" : "#171819"}}>
             About Us
           </CustomMenuTypography>
           <CustomMenuTypography href="/services" sx={{ color: pathname === "/services" ? "#F05C26" : "#171819"}}>
             Services
           </CustomMenuTypography>
+          <CustomMenuTypography href="/galleries" sx={{ color: pathname === "/galleries" ? "#F05C26" : "#171819"}}>
+            Gallery
+          </CustomMenuTypography>
+
           <>
             <IconButton onClick={handleOpenUserMenu} sx={{ p: 0, "&:hover": {background: "none"} }}>
               <CustomMenuTypography marginRight=".3rem" sx={{ 
