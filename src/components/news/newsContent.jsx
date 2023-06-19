@@ -19,37 +19,37 @@ import news7 from "../../assets/news7.png";
 export const newsList = [
     {
         newsHeading: "Scientists Reverse Engineer mRNA Sequence of Moderna Vaccine", 
-        path: "https://numericmind.com/scientists-reverse-engineer-mrna-sequence-of-moderna-vaccine/",
+        path: "https://www.the-scientist.com/news-opinion/covid-19-vaccine-combos-aim-to-boost-immunity-68529",
         imagePath: news1
     },
     {
         newsHeading: "New Malaria Vaccine Shows Most Efficacy of Any to Date: Small Trial", 
-        path: "https://numericmind.com/new-malaria-vaccine-shows-most-efficacy-of-any-to-date-small-trial/",
+        path: "https://www.the-scientist.com/news-opinion/covid-19-vaccine-combos-aim-to-boost-immunity-68529",
         imagePath: news2
     },
     {
         newsHeading: "COVID-19 Vaccine Combos Aim to Boost Immunity", 
-        path: "https://numericmind.com/covid-19-vaccine-combos-aim-to-boost-immunity/",
+        path: "https://www.the-scientist.com/news-opinion/covid-19-vaccine-combos-aim-to-boost-immunity-68529",
         imagePath: news3
     },
     {
         newsHeading: "NIH Halts Outpatient COVID-19 Convalescent Plasma Trial", 
-        path: "https://numericmind.com/nih-halts-outpatient-covid-19-convalescent-plasma-trial/",
+        path: "https://www.the-scientist.com/news-opinion/nih-halts-outpatient-covid-19-convalescent-plasma-trial-68514",
         imagePath: news4
     },
     {
         newsHeading: "Q&A: New Trials Tackle COVID-19 Vaccines in Pregnancy", 
-        path: "https://numericmind.com/qa-new-trials-tackle-covid-19-vaccines-in-pregnancy/",
+        path: "https://www.the-scientist.com/news-opinion/qa-new-trials-tackle-covid-19-vaccines-in-pregnancy-68494",
         imagePath: news5
     },
     {
         newsHeading: "High Risk of Bias in Early COVID-19 Studies: Meta-Analysis", 
-        path: "https://numericmind.com/high-risk-of-bias-in-early-covid-19-studies-meta-analysis/",
+        path: "https://www.the-scientist.com/news-opinion/qa-new-trials-tackle-covid-19-vaccines-in-pregnancy-68494",
         imagePath: news6
     },
     {
         newsHeading: "Eli Lilly Claims New Drug Can Slow Alzheimer’s-Related Decline", 
-        path: "https://numericmind.com/eli-lilly-claims-new-drug-can-slow-alzheimers-related-decline/",
+        path: "https://www.the-scientist.com/news-opinion/eli-lilly-claims-new-drug-can-slow-alzheimers-related-decline-68546",
         imagePath: news7
     },
 ]

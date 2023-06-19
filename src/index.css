@@ -254,7 +254,7 @@ html .modal-active, body .modal-active {
 }
 
 .fade-in-bl {
-	animation: fade-in-bl 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes fade-in-bl {
@@ -269,7 +269,7 @@ html .modal-active, body .modal-active {
 }
 
 .fade-in-fwd {
-	animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes fade-in-fwd {
@@ -284,7 +284,7 @@ html .modal-active, body .modal-active {
 }
 
 .firstImage1 {
-	animation: fade-in-fwd 1.5s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
 @keyframes firstImage1 {

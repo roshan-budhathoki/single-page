@@ -51,7 +51,7 @@ const HeroSection = () => {
                             fontSize: "1.25rem",
                             fontFamily: "Poppins",
                             color: "#575757",
-                            marginTop: "2rem",
+                            marginTop: "1rem",
                             width:  "29rem",
                             display: {sm: "none", xs: "none", md: "block" },
                         }}>
@@ -75,7 +75,7 @@ const HeroSection = () => {
                             We offer statistical programming services to biotechnology, healthcare, 
                             biomedical and pharmaceutical companies across the globe. 
                         </Box>
-                        <ButtonComponent bgcolor="#F05C26" marginTop="1rem" sx={{
+                        <ButtonComponent bgcolor="#F05C26" marginTop={{ md: "1.5rem", sm: "1rem", xs: "1rem" }} sx={{
                             width: {md: "10rem", xs: "93%", sm: "93%"}
                             }}
                             onClick={() => navigate("/about")}
