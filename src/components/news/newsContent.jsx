@@ -69,7 +69,7 @@ const NewsContent = () => {
                 fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
                 marginTop={{md: "2rem", xs: "1rem",  sx: "1rem" }}
             >
-                New and Events
+                News and Events
             </CustomServiceHeading>
             <Typography
                 fontWeight="500"

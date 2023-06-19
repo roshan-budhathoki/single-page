@@ -193,8 +193,8 @@ const Footer = () => {
                     </Box>
                   </ListItemButton>
                 </ListItem>
-                <ListItem disablePadding>
-                  <ListItemButton>
+                <ListItem disablePadding >
+                  <ListItemButton onClick={()=> window.open('https://goo.gl/maps/dzGmhYiHe5XGDEvp8','noopener, noreferrer')}>
                     <ListItemIcon>
                       <PlaceIcon sx={{"& svg": {fontSize: "1rem"}}} />
                     </ListItemIcon>
@@ -205,7 +205,7 @@ const Footer = () => {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                  <ListItemButton>
+                  <ListItemButton onClick={()=> window.open('https://goo.gl/maps/pLrPEzmHR6BmT7726', 'noopener, noreferrer')} >
                     <ListItemIcon>
                       <PlaceIcon sx={{"& svg": {fontSize: "1rem"}}} />
                     </ListItemIcon>

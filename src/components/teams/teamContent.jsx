@@ -69,7 +69,7 @@ const TeamContent = () => {
               borderRadius="10px" padding=".7rem" textAlign="center" 
             >
               <CustomServiceTypography>
-                Meet Our Data Scientist
+                Meet Our Data Scientists
               </CustomServiceTypography>
             </Box>
           </Box>
