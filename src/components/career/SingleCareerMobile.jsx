@@ -41,7 +41,7 @@ const SingleCareerMobile = () => {
                 lineHeight="18px"
                 marginTop="1rem"
             >
-                Numeric Mind is looking to hire 5 Statistical/SAS trainees who are passionate about 
+                NumericMind is looking to hire 5 Statistical/SAS trainees who are passionate about 
                 building up his/her professional career in Clinical Programming and Pharmaceutical 
                 industry in the U.S. In order to prepare for real world Clinical Programming projects, 
                 the company will train the selected candidates by offering online and instructor-led SAS 
@@ -98,7 +98,7 @@ const SingleCareerMobile = () => {
                     </li>
                     <li>
                         <CustomTitleTypography>
-                            The selected candidates will have to make a commitment to work for Numeric Mind at least 
+                            The selected candidates will have to make a commitment to work for NumericMind at least 
                             for 2 full years from the date of hire as a fulltime employee. If they fail to fulfill their 
                             obligations, they are required to pay all expenses incurred on them (training cost plus 
                             monthly stipends).
@@ -107,7 +107,7 @@ const SingleCareerMobile = () => {
                     <li>
                         <CustomTitleTypography>
                             If a candidate discontinues training program/internship before completion, they are expected
-                            to pay Numeric Mind all expenses incurred on them (training costs and monthly stipends).
+                            to pay NumericMind all expenses incurred on them (training costs and monthly stipends).
                         </CustomTitleTypography>
                     </li>
                 </ul>

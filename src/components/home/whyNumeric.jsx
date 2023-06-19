@@ -13,7 +13,7 @@ const WhyNumeric = () => {
     {
       icon: <LocalPoliceIcon />,
       name: "Quality",
-      description: "Experience unparalleled quality in Data Analytics Services at Numeric Mind. Our meticulous approach ensures accurate insights and reliable solutions for data-driven success."
+      description: "Experience unparalleled quality in Data Analytics Services at NumericMind. Our meticulous approach ensures accurate insights and reliable solutions for data-driven success."
     },
     {
       icon: <VerifiedIcon />,
@@ -23,7 +23,7 @@ const WhyNumeric = () => {
     {
       icon: <AttachMoneyIcon />,
       name: "Economical",
-      description: "Choose Numeric Mind for cost-effective Data Analytics Services. We offer competitive pricing without compromising on quality, delivering maximum value for your investment."
+      description: "Choose NumericMind for cost-effective Data Analytics Services. We offer competitive pricing without compromising on quality, delivering maximum value for your investment."
     },
     {
       icon: <AutoAwesomeIcon />,

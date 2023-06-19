@@ -79,7 +79,7 @@ const NewsContent = () => {
                 width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                 marginTop="1rem"
                 >
-                Stay updated with the latest news and events in the data analytics industry with Numeric Mind. 
+                Stay updated with the latest news and events in the data analytics industry with NumericMind. 
                 Discover valuable insights, trends, and advancements through our informative 
                 articles and participate in exciting events that shape the future of data analysis.
             </Typography>

@@ -86,7 +86,7 @@ const Footer = () => {
           }}>
             <img src={MobileLogo} alt="this is mobile logo" onClick={() => navigate('/')} />
             <Typography fontWeight="400" fontSize="0.75rem" color="#515458" lineHeight="1.2rem" marginTop="1.5rem" marginBottom="1rem"> 
-              An American and Nepalese firm called Numeric Mind offers complete statistical analysis services, 
+              An American and Nepalese firm called NumericMind offers complete statistical analysis services, 
               especially to clients in the biotech, healthcare, and pharmaceutical industries.
             </Typography>
             <Divider />
@@ -129,7 +129,7 @@ const Footer = () => {
                 NumericMind
               </Typography>
               <CustomFooterTypography>
-              Numeric Mind, a top statistical consulting company in the USA and Nepal, 
+              NumericMind, a top statistical consulting company in the USA and Nepal, 
               offers comprehensive statistical analysis services to clients in Biotech, Healthcare, 
               and Pharmaceuticals. We also provide statistical solutions, training services to academic, 
               research institutions, 
@@ -185,22 +185,22 @@ const Footer = () => {
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
-                      <PlaceIcon sx={{"& svg": {fontSize: "1rem"}}} />
+                      <AccessTimeIcon sx={{"& svg": {fontSize: "1rem"}}} />
                     </ListItemIcon>
                     <Box>
-                      <CustomFooterTypography sx={{fontWeight: "700 !important"}}>USA Office:</CustomFooterTypography>
-                      <CustomFooterTypography>975 Gallery Dr. Schwenksville, PA 19473, USA</CustomFooterTypography>
+                      <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Office Hours:</CustomFooterTypography>
+                      <CustomFooterTypography>Mon – Fri, 9 AM – 5 PM (NPT)</CustomFooterTypography>
                     </Box>
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
                   <ListItemButton>
                     <ListItemIcon>
-                      <AccessTimeIcon sx={{"& svg": {fontSize: "1rem"}}} />
+                      <PlaceIcon sx={{"& svg": {fontSize: "1rem"}}} />
                     </ListItemIcon>
                     <Box>
-                      <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Office Hours:</CustomFooterTypography>
-                      <CustomFooterTypography>Mon – Fri, 9 AM – 5 PM (NPT)</CustomFooterTypography>
+                      <CustomFooterTypography sx={{fontWeight: "700 !important"}}>USA Office:</CustomFooterTypography>
+                      <CustomFooterTypography>975 Gallery Dr. Schwenksville, PA 19473, USA</CustomFooterTypography>
                     </Box>
                   </ListItemButton>
                 </ListItem>
@@ -241,7 +241,7 @@ const Footer = () => {
               md: "space-between"
             }
           }}>
-            <CustomFooterTypography>Numeric Mind 2023. All rights reserved</CustomFooterTypography>
+            <CustomFooterTypography>NumericMind 2023. All rights reserved</CustomFooterTypography>
             <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="space-between" width="8rem"> 
               <Link sx={{color: "black"}} href="https://www.facebook.com/numericmind">
                 <FacebookIcon />

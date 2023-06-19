@@ -35,7 +35,7 @@ const AboutContent = () => {
                         width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                         marginTop="1rem"
                     >
-                        Numeric Mind is a leading statistical consulting company specializing in 
+                        NumericMind is a leading statistical consulting company specializing in 
                         full statistical analysis services for Biotech, Healthcare, and Pharmaceuticals. We also offer statistical solutions and training to academic, research institutions, 
                         and global government/non-government organizations. Unlock data-driven insights with us.
                     </Typography>
@@ -63,7 +63,7 @@ const AboutContent = () => {
                             lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                             width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
                             marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
-                            Numeric Mind delivers comprehensive statistical solutions and data analytics services 
+                            NumericMind delivers comprehensive statistical solutions and data analytics services 
                             across diverse industries like Healthcare, Pharmaceuticals, Biotech, and Banking. With
                             expertise in Biostatistics and Clinical Data Analytics, we also provide consultations
                             for sectors including Banking, Insurance, Telecom, and Agribusiness. Join us as we 
@@ -129,12 +129,12 @@ const AboutContent = () => {
                             width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
                             marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                             >
-                        Numeric Mind is a distinguished team of data scientists, biostatisticians, business analysts,
+                        NumericMind is a distinguished team of data scientists, biostatisticians, business analysts,
                         and clinical analysts based in Kathmandu, Nepal, and the USA. Our skilled resources deliver 
                         customized statistical and analytical services to meet your unique business requirements. At 
-                        Numeric Mind, we value a harmonious blend of expertise and passion, fostering an environment that 
+                        NumericMind, we value a harmonious blend of expertise and passion, fostering an environment that 
                         propels our company forward. Our experienced professionals and enthusiastic team members from various
-                        domains are dedicated to achieving the goals and shaping the future of Numeric Mind. 
+                        domains are dedicated to achieving the goals and shaping the future of NumericMind. 
                         Trust us for exceptional data-driven solutions that drive your business growth.
                         </CustomAboutDiscription>
                     </Box>
@@ -153,7 +153,7 @@ const AboutContent = () => {
                         textAlign="center" 
                         marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                         >
-                        Numeric Mind leverages state-of-the-art data science tools and technologies to meet client requirements. 
+                        NumericMind leverages state-of-the-art data science tools and technologies to meet client requirements. 
                         We employ SAS, R, and Python for processing large datasets, while Tableau and Microsoft Power 
                         BI are utilized for data visualization and dynamic dashboards tailored to your specific needs.
                     </CustomAboutDiscription>
@@ -178,16 +178,19 @@ const AboutContent = () => {
                             insights to the healthcare industry. With our expertise, we help organizations unlock the potential of 
                             their data, enabling evidence-based decision-making and driving innovation.
                             <br />
+                            <br />
                             NumericMind takes pride in its commitment to excellence, delivering high-quality solutions tailored to meet 
                             the unique needs of each client. We understand the importance of accuracy, reliability, and efficiency in data 
                             analytics, and we strive to exceed expectations in every project we undertake. By leveraging advanced analytics
                             techniques, cutting-edge technologies, and a deep understanding of industry dynamics, we empower our clients 
                             to extract valuable insights from their data.
                             <br />
+                            <br />
                             Our goal is not just to provide data analytics services but to establish long-term partnerships with our clients. 
                             We believe in collaboration and actively engage with our clients to understand their objectives, challenges, and 
                             requirements. This enables us to deliver tailored solutions that address their specific needs and generate actionable 
                             results.
+                            <br />
                             <br />
                             In conclusion, NumericMind, under my leadership, is dedicated to providing exceptional clinical programming and data 
                             analytics services. With our experienced team and a commitment to delivering value, we are well-positioned to support 

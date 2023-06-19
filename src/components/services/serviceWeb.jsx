@@ -37,10 +37,10 @@ const ServiceWeb = () => {
                 width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                 marginTop="1rem"
               >
-              Numeric Mind is a leading statistical consulting company specializing in comprehensive analysis services for 
+              NumericMind is a leading statistical consulting company specializing in comprehensive analysis services for 
               Biotech, Healthcare, 
               and Pharmaceuticals. We also offer statistical solutions and training to academic, research institutions, 
-              and global government/non-government organizations. Unlock data-driven insights with Numeric Mind's expertise.
+              and global government/non-government organizations. Unlock data-driven insights with NumericMind's expertise.
               </Typography>
           </Box>
       </Box>
@@ -96,7 +96,7 @@ const ServiceWeb = () => {
                 lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                 marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
               >
-                Although Numeric Mind is a new player in the industry, we boast a team of seasoned experts with 
+                Although NumericMind is a new player in the industry, we boast a team of seasoned experts with 
                 extensive experience. We possess a strong technical understanding of the entire clinical trials 
                 life cycle and acknowledge the crucial role of statistical data analysis.<br />
                 Our skilled teams excel at analyzing Reporting and Analysis Plans (RAP) and constructing 
@@ -104,11 +104,11 @@ const ServiceWeb = () => {
                 relevant statistical analysis on these datasets, create necessary tables, listings, and figures, 
                 and develop customized reports. Throughout the process, we strictly adhere to the guidelines and 
                 regulations set forth by CDISC.<br/>
-                With Numeric Mind, you can trust our expertise to guide your research data towards evidence-based 
+                With NumericMind, you can trust our expertise to guide your research data towards evidence-based 
                 statistical decision-making, ensuring project success. Our biostatisticians collaborate closely with 
                 clients, offering assistance in study design, selecting appropriate statistical methods, and providing 
                 comprehensive analysis, visualization, and reporting with meaningful insights.<br />
-                Choose Numeric Mind for meticulous attention to detail, adherence to industry standards, and a 
+                Choose NumericMind for meticulous attention to detail, adherence to industry standards, and a 
                 dedication to delivering quality solutions in biostatistics.
             </CustomAboutDiscription>
           </Box>
@@ -125,12 +125,12 @@ const ServiceWeb = () => {
                 fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                 lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                 marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
-                Numeric Mind delivers exceptional, high-quality biostatistics services. 
+                NumericMind delivers exceptional, high-quality biostatistics services. 
                 Our experienced team combines programming skills with expertise in bio-statistics 
                 to guide you towards evidence-based statistical decision-making, ensuring project success. 
                 Collaborating closely with clients, our biostatisticians help create study designs, identify 
                 precise statistical methods, analyze and visualize data, and generate insightful reports. Trust 
-                Numeric Mind to unlock the full potential of your research data and provide you with the valuable 
+                NumericMind to unlock the full potential of your research data and provide you with the valuable 
                 information needed for informed decision-making. 
                 Choose us for comprehensive biostatistical solutions that drive your project towards success.
             </CustomAboutDiscription>
@@ -154,8 +154,8 @@ const ServiceWeb = () => {
                 lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                 marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
                   The synergy between businesses, finances, and statistics is undeniable. Financial institutions generate vast amounts of data, which holds valuable insights for future planning, policy development, and decision-making.
-                  Numeric Mind specializes in offering a wide range of statistical analysis services, tailored to customer-level data. Our statistics-based solutions empower you to formulate effective policies and make evidence-backed decisions, fostering business growth and future readiness.<br/>
-                  While we cater to all business sectors, our current focus lies in Insurance, Risk Management, Asset Management, Banking, and Agribusiness. Trust Numeric Mind to unlock the potential within your data, driving informed strategies and positioning your business for a successful future.
+                  NumericMind specializes in offering a wide range of statistical analysis services, tailored to customer-level data. Our statistics-based solutions empower you to formulate effective policies and make evidence-backed decisions, fostering business growth and future readiness.<br/>
+                  While we cater to all business sectors, our current focus lies in Insurance, Risk Management, Asset Management, Banking, and Agribusiness. Trust NumericMind to unlock the potential within your data, driving informed strategies and positioning your business for a successful future.
             </CustomAboutDiscription>
           </Box>
           <Box 
@@ -172,14 +172,14 @@ const ServiceWeb = () => {
                 fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                 lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                 marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
-                At Numeric Mind, our diverse team comprises experts from various domains, 
+                At NumericMind, our diverse team comprises experts from various domains, 
                 enabling us to provide statistical programming services tailored to your 
                 research or business needs. Our dedicated teams meticulously analyze datasets, 
                 prepare databases, and develop analysis plans. Additionally, we offer protocol 
                 designs, sample size investigations, development of statistical analysis plans, 
                 and mock table shells. With our comprehensive expertise, we cater to a wide range 
                 of industries, ensuring accurate and efficient statistical programming solutions. 
-                Trust Numeric Mind for precise data analysis and 
+                Trust NumericMind for precise data analysis and 
                 programming support that drives the success of your projects.
             </CustomAboutDiscription>
           </Box>  
@@ -215,16 +215,16 @@ const ServiceWeb = () => {
                 lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
                 marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
                 
-                  As a leading statistical service provider, Numeric Mind offers diverse statistical 
+                  As a leading statistical service provider, NumericMind offers diverse statistical 
                   modeling services to shape your future planning. Our expertise encompasses advanced 
                   techniques like Machine Learning and Deep Learning, enabling us to develop cutting-edge 
                   models for precise future predictions.<br />
 
-                  Numeric Mind's talented team excels in creating both simple uni-variate models and complex 
+                  NumericMind's talented team excels in creating both simple uni-variate models and complex 
                   multivariate models, including cluster analysis, factor analysis, principal component 
                   analysis, and time series analysis. Additionally, we specialize in experimental design, 
                   non-parametric methods, Bayesian decision making, ANOVA, MANOVA, and discriminate analysis.
-                  Trust Numeric Mind for state-of-the-art statistical modeling solutions that empower your 
+                  Trust NumericMind for state-of-the-art statistical modeling solutions that empower your 
                   decision-making and drive success.
             </CustomAboutDiscription>
           </Box>

@@ -1,7 +1,7 @@
 import axios from 'axios';
 import React, { useState } from 'react'
 import { useSnackbar } from 'notistack';
-import { Box, Typography, TextField, Container } from '@mui/material'
+import { Box, Typography, TextField, Container, Link } from '@mui/material'
 
 import Eclipse from '../../assets/eclipse.png';
 import Cambridge from '../../assets/Cambridge.png';
@@ -99,7 +99,9 @@ const OurPartner = () => {
                   Receive updates from us.
                 </Typography>
                 <ButtonComponent bgcolor="#F05C26" width="8.6rem" marginTop="1rem">
-                  Contact US
+                  <Link href="mailto:hemanta.shrestha@wiseyak.com" width="100%" sx={{ color: "#fff", textDecoration: "none"}}> 
+                    Contact US
+                  </Link>                  
                 </ButtonComponent>
               </Box>
               <Container>

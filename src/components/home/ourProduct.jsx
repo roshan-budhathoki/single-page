@@ -87,7 +87,7 @@ const OurProduct = () => {
                                         lineHeight="22px"
                                         marginTop=".5rem"
                                     >
-                                        Numeric Mind may be a relatively new name 
+                                        NumericMind may be a relatively new name 
                                         in the industry but we comprise of some of the most ...
                                     </Typography>
                                     <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 
@@ -119,7 +119,7 @@ const OurProduct = () => {
                                         lineHeight="22px"
                                         marginTop=".5rem"
                                     >
-                                        Numeric Mind may be a relatively new name 
+                                        NumericMind may be a relatively new name 
                                         in the industry but we comprise of some of the most ...
                                     </Typography>
                                     <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 
@@ -151,7 +151,7 @@ const OurProduct = () => {
                                         lineHeight="22px"
                                         marginTop=".5rem"
                                     >
-                                        Numeric Mind may be a relatively new name 
+                                        NumericMind may be a relatively new name 
                                         in the industry but we comprise of some of the most ...
                                     </Typography>
                                     <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 
@@ -183,7 +183,7 @@ const OurProduct = () => {
                                         lineHeight="22px"
                                         marginTop=".5rem"
                                     >
-                                        Numeric Mind may be a relatively new name 
+                                        NumericMind may be a relatively new name 
                                         in the industry but we comprise of some of the most ...
                                     </Typography>
                                     <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 
@@ -215,7 +215,7 @@ const OurProduct = () => {
                                         lineHeight="22px"
                                         marginTop=".5rem"
                                     >
-                                        Numeric Mind may be a relatively new name 
+                                        NumericMind may be a relatively new name 
                                         in the industry but we comprise of some of the most ...
                                     </Typography>
                                     <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 

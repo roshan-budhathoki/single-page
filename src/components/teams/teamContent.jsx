@@ -32,7 +32,7 @@ const TeamContent = () => {
                 width={{md: "68rem", sm: "19.5rem", xs: "19.5rem"}}
                 marginTop="1rem"
               >
-                Meet our team at Numeric Mind, where we combine expertise in IT and data analysis.
+                Meet our team at NumericMind, where we combine expertise in IT and data analysis.
                 Our dedicated professionals are passionate about transforming complex data into 
                 valuable insights. Trust us to optimize your business decisions through cutting 
                 edge technology and advanced analytics.
