@@ -46,7 +46,7 @@ const FounderMessage = () => {
                         refining my data and analytical skills. Currently, I am thrilled to 
                         lead NumericMind, a rapidly growing clinical programming and data analytics service company. 
                     </CustomDiscriptionTypography>
-                    <ButtonComponent width="13rem" bgcolor="#F05C26" onClick={() => navigate('/about/wordFromCeo')}>
+                    <ButtonComponent width="13rem" bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
                         Read More
                     </ButtonComponent>
                 </Box>

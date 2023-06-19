@@ -72,7 +72,7 @@ const Footer = () => {
     },
     {
       name: "Find Us",
-      url: "/about"
+      url: "https://goo.gl/maps/xSNLjoQrKHaCAkTw8"
     }
   ]
 

@@ -185,7 +185,7 @@ const OurPartner = () => {
                           },
                         }}
                       sx={textFieldStyle}/>
-                      <ButtonComponent width="8.5rem" bgcolor="#FFCC00" onClick={handleContact}>
+                      <ButtonComponent width="8.5rem" bgcolor="#FFCC00" sx={{cursor: "pointer"}} onClick={handleContact}>
                         Submit
                       </ButtonComponent>
                     </Box>

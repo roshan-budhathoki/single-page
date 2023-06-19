@@ -76,7 +76,8 @@ const HeroSection = () => {
                             biomedical and pharmaceutical companies across the globe. 
                         </Box>
                         <ButtonComponent bgcolor="#F05C26" marginTop={{ md: "1.5rem", sm: "1rem", xs: "1rem" }} sx={{
-                            width: {md: "10rem", xs: "93%", sm: "93%"}
+                            width: {md: "10rem", xs: "93%", sm: "93%"},
+                            cursor: "pointer"
                             }}
                             onClick={() => navigate("/about")}
                         >
