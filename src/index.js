@@ -18,6 +18,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Teams from './components/teams/teamDetails';
 import { SnackbarProvider } from 'notistack';
+import GalleryDetail from './components/gallery/galleryDetail';
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "/news",
     element: <News />
+  },
+  {
+    path: "/galleries",
+    element: <GalleryDetail />
   }
 
 ]);

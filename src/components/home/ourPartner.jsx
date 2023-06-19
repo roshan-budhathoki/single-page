@@ -45,7 +45,7 @@ const OurPartner = () => {
 
     axios.post('https://sansshrestha.com.np/sendEmail', {
         fullName,
-        contactNumber,
+        phoneNumber: contactNumber,
         email
     }).then(() => {
       enqueueSnackbar("Thank you for your time", {
