@@ -88,19 +88,19 @@ const HeroSection = () => {
                         <Box className="fade-in-bl">
                             <img src={heroLogoMain}  alt="hero section" style={{ position: "absolute" }}/>
                         </Box>
-                        <Box className="fade-in-fwd">
+                        <Box className="hero1">
                             <img src={heroLogo1} alt="hero section" style={{ marginBottom: "1rem"}} />
                         </Box>
-                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                        <Box className="hero2" style={{ position: "absolute" }}>
                             <img src={heroLogo2} alt="hero section" />
                         </Box>
-                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                        <Box className="hero3" style={{ position: "absolute" }}>
                             <img src={heroLogo3} alt="hero section" />
                         </Box>
-                        <Box className="fade-in-fwd" style={{ position: "absolute" }}>
+                        <Box className="hero4" style={{ position: "absolute" }}>
                             <img src={heroLogo4} alt="hero section" />
                         </Box>
-                        <Box className="firstImage1" style={{ position: "absolute" }}>
+                        <Box className="hero5" style={{ position: "absolute" }}>
                             <img src={heroLogo5} alt="hero section"/>
                         </Box>
                     </Box>

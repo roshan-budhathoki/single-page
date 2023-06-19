@@ -255,6 +255,7 @@ html .modal-active, body .modal-active {
 
 .fade-in-bl {
 	animation: fade-in-bl 1s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 1.5s;
 }
 
 @keyframes fade-in-bl {
@@ -268,10 +269,6 @@ html .modal-active, body .modal-active {
   }
 }
 
-.fade-in-fwd {
-	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-}
-
 @keyframes fade-in-fwd {
   0% {
     transform: translateZ(-80px);
@@ -283,17 +280,28 @@ html .modal-active, body .modal-active {
   }
 }
 
-.firstImage1 {
+.hero1 {
 	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 0.2s;
 }
 
-@keyframes firstImage1 {
-  0% {
-    transform: translateZ(-80px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateZ(0);
-    opacity: 1;
-  }
+.hero2 {
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 0.4s;
 }
+
+.hero3 {
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 0.6s;
+}
+
+.hero4 {
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 0.8s;
+}
+
+.hero5 {
+	animation: fade-in-fwd 2s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+  animation-delay: 1s;
+}
+
