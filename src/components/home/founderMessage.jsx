@@ -16,10 +16,10 @@ const FounderMessage = () => {
                 }} 
                 justifyContent="space-between" alignItems="center" paddingY="2rem" 
             >
-                <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}}>
+                <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} >
                     <img src={founderProfile} alt="founder message" />
                 </Box>
-                <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}}>
+                <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" alignItems="center" marginBottom="1.5rem">
                     <img src={founderMobileProfile} alt="founder message" />
                 </Box>
                 <Box sx={{ width: { xs: "20rem", sm: "20rem", md: "36rem"}}}>

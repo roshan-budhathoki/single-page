@@ -4,16 +4,18 @@ import { useSnackbar } from 'notistack';
 import { Box, Typography, TextField, Container, Link } from '@mui/material'
 
 import Eclipse from '../../assets/eclipse.png';
-import Cambridge from '../../assets/Cambridge.png';
-import Microsoft from '../../assets/Microsoft.png';
-import Standford from '../../assets/Standford.png';
+import Nimble from '../../assets/ourpartner/nimble.png';
+import MobileNimble from '../../assets/ourpartner/mobileNimble.png';
+import Val from '../../assets/ourpartner/val.png';
+import MobileVal from '../../assets/ourpartner/mobileVal.png';
+import Wiseyak from '../../assets/ourpartner/wiseyak.png';
+import MobileWiseyak from '../../assets/ourpartner/mobileWiseyak.png'
+
 import MenuDesign from '../../assets/MenuDesign.png';
 import ButtonComponent from '../utils/ButtonComponent';
-import MobileStandford from '../../assets/mobileGoogle.png'
 import ContactBelows from '../../assets/ContactBelows.png';
 import FormTopCircle from '../../assets/formTopCircle.png';
-import MobileMicrosoft from '../../assets/mobileMicrosoft.png';
-import MobileCambridge from '../../assets/mobileUniversity.png';
+
 import { CustomDiscriptionTypography, CustomHeadingTypography } from '../utils/CustomTypography'
 
 const OurPartner = () => {
@@ -81,17 +83,29 @@ const OurPartner = () => {
               </CustomHeadingTypography>
 
               <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="center" paddingY="3rem" marginBottom="4rem">
-                <Box width = "40rem" justifyContent="space-between" display="flex" alignItems="center">
-                  <img src={Standford} alt="standford Profile"/>
-                  <img src={Cambridge} alt="cambridge Profile" />
-                  <img src={Microsoft} alt="microsoft Profile" />
+                <Box width = "100%" justifyContent="space-between" display="flex" alignItems="center">
+                  <Link href="https://nimble-cr.com/nimble-workspace/">
+                    <img src={Nimble} alt="standford Profile"/>
+                  </Link>
+                  <Link href="http://ovalanalytics.com/">
+                    <img src={Val} alt="cambridge Profile" />
+                  </Link>
+                  <Link href="https://wiseyak.com/">
+                    <img src={Wiseyak} alt="microsoft Profile" />
+                  </Link>
                 </Box>
               </Box>
               <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" paddingY="2rem" marginBottom=".5rem">
                 <Box width="100%" justifyContent="space-between" display="flex" alignItems="center">
-                  <img src={MobileCambridge} alt="cambridge Profile" />
-                  <img src={MobileStandford} alt="standford Profile" />
-                  <img src={MobileMicrosoft} alt="microsoft Profile" />
+                  <Link href="https://nimble-cr.com/nimble-workspace/">
+                    <img src={MobileNimble} alt="cambridge Profile" />
+                  </Link>
+                  <Link href="http://ovalanalytics.com/">
+                    <img src={MobileVal} alt="standford Profile" />
+                  </Link>
+                  <Link href="https://wiseyak.com/">
+                    <img src={MobileWiseyak} alt="microsoft Profile" />
+                  </Link>
                 </Box>
               </Box>
               <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} flexDirection="column" alignItems="center"  justifyContent="center" borderRadius="1rem" padding="3rem" bgcolor="#1F384F">

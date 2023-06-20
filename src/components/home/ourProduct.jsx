@@ -1,5 +1,5 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+import { useNavigate } from 'react-router-dom'
 import Slider from 'react-slick';
 import { Container, Box, Typography, IconButton } from '@mui/material'
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
@@ -12,12 +12,13 @@ import ourProduct2 from '../../assets/ourProduct2.png';
 import ourProduct3 from '../../assets/ourProduct3.png';
 import ourProduct4 from '../../assets/ourProduct4.png';
 import ourProduct5 from '../../assets/ourProduct5.png';
-
+import ourProduct6 from '../../assets/ourProduct6.png';
 
 import { CustomServiceHeading } from '../utils/CustomTypography'
 
 const OurProduct = () => {
     const sliderRef = React.useRef(null);
+    const navigate = useNavigate();
     const length = 6;
     const [currentIndex, setCurrentIndex] = React.useState(0);
 
@@ -44,33 +45,38 @@ const OurProduct = () => {
 
     const productDetail = [
         {
+            title: "Nimble Workspace",
+            description : "Nimble Workspace is designed to meet complex data review & statistical reporting needs for clinical trials in most productive manner.",
+            imageUrl: ourProduct6,
+        },
+        {
             title: "Clinical Trial Data Analysis",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "Although NumericMind is a new player in the industry, we boast a team of seasoned experts with extensive experience. We possess a strong technical understanding of the entire clinical trials life cycle and acknowledge the crucial role of statistical data analysis.",
             imageUrl: ourProduct3
         },
         {
             title: "Biostatistics",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "NumericMind delivers exceptional, high-quality biostatistics services. Our experienced team combines programming skills with expertise in bio-statistics to guide you towards evidence-based statistical decision-making, ensuring project success. ",
             imageUrl: ourProduct1
         },
         {
             title: "Business Decision Support",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "The synergy between businesses, finances, and statistics is undeniable. Financial institutions generate vast amounts of data, which holds valuable insights for future planning, policy development, and decision-making.",
             imageUrl: ourProduct2
         },
         {
             title: "Statistical Programming",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "At NumericMind, our diverse team comprises experts from various domains, enabling us to provide statistical programming services tailored to your research or business needs.",
             imageUrl: ourProduct
         },
         {
             title: "Data Visualization",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "We focus on collecting data for the future. Our expert teams excel at processing, mining, and presenting data in a reader-friendly format",
             imageUrl: ourProduct5
         },
         {
             title: "Statistical Modeling",
-            description: "NumericMind may be a relatively new name in the industry but we comprise of some of the most ...",
+            description: "As a leading statistical service provider, NumericMind offers diverse statistical modeling services to shape your future planning. ",
             imageUrl: ourProduct4
         },
     ]
@@ -128,12 +134,14 @@ const OurProduct = () => {
                                                 lineHeight="22px"
                                                 marginTop=".5rem"
                                             >
-                                                {item.description}
+                                                {item.description.slice(0, 90) + "..."}
                                             </Typography>
-                                            <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600"> 
-                                                <Link style={{textDecoration: "none", fontSize: "1rem", color: "#0070F0"}}>
+                                            <Box marginTop="1rem" display="flex" alignItems="center" color="#0070F0" fontWeight="600" sx={{cursor:"pointer"}} onClick={()=>  { 
+                                                index === 0 ? window.open("https://nimble-cr.com/nimble-workspace/") :navigate("/services")
+                                            }}>
+                                                <Typography style={{textDecoration: "none", fontSize: "1rem", color: "#0070F0"}}>
                                                     Read More
-                                                </Link>
+                                                </Typography>
                                                 <ArrowForwardIosIcon fontSize="0.5rem" sx={{marginLeft: "1rem", fontWeight: "600"}} />
                                             </Box>
                                         </Box>
