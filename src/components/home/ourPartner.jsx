@@ -45,7 +45,7 @@ const OurPartner = () => {
       return
     }
 
-    axios.post('https://sansshrestha.com.np/sendEmail', {
+    axios.post('https://backend.numericmind.com/sendEmail', {
         fullName,
         phoneNumber: contactNumber,
         email
