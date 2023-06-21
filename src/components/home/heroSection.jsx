@@ -69,7 +69,7 @@ const HeroSection = () => {
                             fontSize: "1rem",
                             fontFamily: "Poppins",
                             color: "#575757",
-                            marginTop: "2rem",
+                            marginTop: "0.4rem",
                             lineHeight: "2rem",
                         }}>
                             We offer statistical programming services to biotechnology, healthcare, 

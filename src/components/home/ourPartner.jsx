@@ -87,16 +87,16 @@ const OurPartner = () => {
                   <Link href="https://nimble-cr.com/nimble-workspace/">
                     <img src={Nimble} alt="standford Profile"/>
                   </Link>
-                  <Link href="http://ovalanalytics.com/">
-                    <img src={Val} alt="cambridge Profile" />
-                  </Link>
                   <Link href="https://wiseyak.com/">
                     <img src={Wiseyak} alt="microsoft Profile" />
+                  </Link>
+                  <Link href="http://ovalanalytics.com/">
+                    <img src={Val} alt="cambridge Profile" />
                   </Link>
                 </Box>
               </Box>
               <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" paddingY="2rem" marginBottom=".5rem">
-                <Box width="100%" justifyContent="space-between" display="flex" alignItems="center">
+                <Box width="16rem" justifyContent="space-between" display="flex" alignItems="center">
                   <Link href="https://nimble-cr.com/nimble-workspace/">
                     <img src={MobileNimble} alt="cambridge Profile" />
                   </Link>
