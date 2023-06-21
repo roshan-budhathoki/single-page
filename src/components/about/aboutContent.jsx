@@ -61,7 +61,7 @@ const AboutContent = () => {
                         <CustomAboutDiscription 
                             fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                             lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
-                            width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
+                            width={{ md: "36rem", sm: "100%", xs: "100%"}} 
                             marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}>
                             NumericMind delivers comprehensive statistical solutions and data analytics services 
                             across diverse industries like Healthcare, Pharmaceuticals, Biotech, and Banking. With
@@ -77,7 +77,6 @@ const AboutContent = () => {
                         sx={{
                             display: {sm: "block", xs: "block", md: "none" },
                         }}
-                        className="slide-in-fwd-right"
                     >
                         <img src={SecondMobileAbout} alt="what we do profile"/>
                     </Box>
@@ -112,7 +111,6 @@ const AboutContent = () => {
                         sx={{
                             display: {sm: "block", xs: "block", md: "none" },
                         }}
-                        className="slide-in-fwd-left"
                     >
                         <img src={FirstMobileAbout} alt="what we do profile"/>
                     </Box>

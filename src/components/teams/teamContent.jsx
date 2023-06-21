@@ -29,8 +29,9 @@ const TeamContent = () => {
                 fontSize={{md: "1.5rem", sm: "1rem", xs: "1rem"}}
                 lineHeight={{md:"2.25rem", sm: "1.5rem", xs: "1.5rem"}}
                 textAlign="center"
-                width={{md: "68rem", sm: "19.5rem", xs: "19.5rem"}}
+                width={{md: "68rem", sm: "100%", xs: "100%"}}
                 marginTop="1rem"
+                marginLeft={{ md: "0rem", sm: "0.5rem", xs: "0.5rem"}}
               >
                 Meet our team at NumericMind, where we combine expertise in IT and data analysis.
                 Our dedicated professionals are passionate about transforming complex data into 
