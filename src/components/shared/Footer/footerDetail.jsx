@@ -211,7 +211,7 @@ const Footer = () => {
                     </ListItemIcon>
                     <Box>
                       <CustomFooterTypography sx={{fontWeight: "700 !important"}}>Nepal Office:</CustomFooterTypography>
-                      <CustomFooterTypography>Bhatbhateni, Kathmandu</CustomFooterTypography>
+                      <CustomFooterTypography>Naxal Bhatbhateni, Kathmandu</CustomFooterTypography>
                     </Box>
                   </ListItemButton>
                 </ListItem>
