@@ -100,7 +100,7 @@ const WhyNumeric = () => {
                       </Box>
                     </Box>
                   </Box>
-                  <Box sx={{ display: { md: "none", xs: "block", sm: "block" }, maxWidth: "18rem", height: "100%", color: "black", background: "#fff", borderRadius: "1rem",  paddingX: "2rem", paddingTop:"1.25rem"}}>
+                  <Box sx={{ display: { md: "none", xs: "block", sm: "block" }, maxWidth: "30rem", height: "100%", color: "black", background: "#fff", borderRadius: "1rem",  paddingX: "2rem", paddingTop:"1.25rem"}}>
                     <Typography fontWeight="600" fontSize="1.5rem" fontFamily="Poppins" >
                       {question.name}
                     </Typography>

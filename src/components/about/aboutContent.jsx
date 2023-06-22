@@ -32,7 +32,7 @@ const AboutContent = () => {
                         fontSize={{md: "1.5rem", sm: "1rem", xs: "1rem"}}
                         lineHeight={{md:"2.25rem", sm: "1.5rem", xs: "1.5rem"}}
                         textAlign="center"
-                        width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
+                        width={{md: "70rem", sm: "100%", xs: "100%"}}
                         marginTop="1rem"
                     >
                         NumericMind is a leading statistical consulting company specializing in 
@@ -124,7 +124,7 @@ const AboutContent = () => {
                         <CustomAboutDiscription 
                             fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                             lineHeight={{ md: "1.9rem", sm: "1.125rem", xs: "1.125rem"}}
-                            width={{ md: "36rem", sm: "18.2rem", xs: "18.2rem"}} 
+                            width={{ md: "36rem", sm: "100%", xs: "100%"}} 
                             marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                             >
                         NumericMind is a distinguished team of data scientists, biostatisticians, business analysts,
@@ -146,7 +146,7 @@ const AboutContent = () => {
                         Tools we use
                     </CustomAboutUs>
                     <CustomAboutDiscription
-                        width={{md: "67rem", sm: "17.5rem", xs: "17.5rem"}}
+                        width={{md: "67rem", sm: "100%", xs: "100%"}}
                         fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                         textAlign="center" 
                         marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
@@ -172,7 +172,7 @@ const AboutContent = () => {
                         Word From Our <br /> CEO & Co-Founder 
                     </CustomAboutUs>
                     <CustomAboutDiscription
-                        width={{md: "67rem", sm: "17.5rem", xs: "17.5rem"}}
+                        width={{md: "67rem", sm: "100%", xs: "100%"}}
                         fontSize={{ md: "1.25rem", sm: "0.75rem", xs: "0.75rem"}}
                         marginTop={{ md: "1rem", sm: "0.3rem", xs: "0.3rem" }}
                         >

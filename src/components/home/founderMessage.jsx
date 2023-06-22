@@ -22,9 +22,10 @@ const FounderMessage = () => {
                 <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} justifyContent="center" alignItems="center" marginBottom="1.5rem">
                     <img src={founderMobileProfile} alt="founder message" />
                 </Box>
-                <Box sx={{ width: { xs: "20rem", sm: "20rem", md: "36rem"}}}>
+                <Box sx={{ width: { xs: "100%", sm: "100%", md: "36rem"}}}>
                     <CustomHeadingTypography
-                        sx={{ display: { xs : "flex", sm: "flex", md: "none"}}}
+                        sx={{ justifyContent: "center", display: { xs : "flex", sm: "flex", md: "none"}}}
+
                     >
                         Our Founder
                     </CustomHeadingTypography>
@@ -46,7 +47,7 @@ const FounderMessage = () => {
                         refining my data and analytical skills. Currently, I am thrilled to 
                         lead NumericMind, a rapidly growing clinical programming and data analytics service company. 
                     </CustomDiscriptionTypography>
-                    <ButtonComponent width="13rem" bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
+                    <ButtonComponent width={{ md: "13rem"}} bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
                         Read More
                     </ButtonComponent>
                 </Box>
