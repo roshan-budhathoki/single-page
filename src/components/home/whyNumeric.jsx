@@ -65,8 +65,7 @@ const WhyNumeric = () => {
           A Trusted Statistical Data Solution Company based in USA and Nepal consisting of highly 
           experienced data scientists, biostatisticians, business analysts and clinical analysts.
           </Typography>
-          <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} marginBottom="4rem">
-            
+          <Grid container spacing={2} columns={{ xs: 4, sm: 8, md: 12 }} marginBottom="1.5rem">
             {
               questionNumeric.map((question, index) => 
               <Grid item xs={12} sm={12} md={4} key={index} sx={{
@@ -127,8 +126,8 @@ const WhyNumeric = () => {
             </Box>
             <Box>
               <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" borderRadius="1rem">
-                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
-                  Clinical Trial Data Analysis
+                <Link href="" sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                  Nimble Workspace
                 </Link>
                 <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
                   <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
@@ -137,21 +136,21 @@ const WhyNumeric = () => {
                 </Box>
               </Box>
               <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" marginTop="1rem" borderRadius="1rem">
-                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                <Link href="/services" sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
                   Biostatistics
                 </Link>
                 <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
-                  <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
+                  <Link href="/services" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
                     View More
                   </Link>
                 </Box>
               </Box>
               <Box bgcolor="#FBFBFB" boxShadow={2} padding="2rem" marginTop="1rem" borderRadius="1rem">
-                <Link sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
+                <Link href="/services" sx={{ color: "#1F284F", textDecoration: "underline", fontSize: "1rem", fontWeight: "600", fontFamily: "Poppins"  }}>
                 Business Decision Support
                 </Link>
                 <Box borderLeft="3px solid #1F284F" paddingLeft="1rem" marginTop="1rem" >
-                  <Link href="#" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
+                  <Link href="/services" sx={{textDecoration: "none", fontSize: "#0070F0E5", fontFamily:"Poppins"  }} >
                     View More
                   </Link>
                 </Box>
