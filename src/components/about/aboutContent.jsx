@@ -158,10 +158,18 @@ const AboutContent = () => {
                 </Box>
                 <Box display="flex" flexDirection="column" justifyContent="center" alignItems="center" width="100%" marginBottom={{md: "2rem"}} >
                     <CustomAboutUs
+                        display={{ md: " block", sm:"none", xs: "none"}}
                         fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
                         marginTop={{ sm: "1rem", xs: "1rem", md: "2rem" }}
                     >
                         Word From Our CEO & Co-Founder 
+                    </CustomAboutUs>
+                    <CustomAboutUs
+                        display={{ md: "none", sm:"block", xs: "block"}}
+                        fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
+                        marginTop={{ sm: "1rem", xs: "1rem", md: "2rem" }}
+                    >
+                        Word From Our <br /> CEO & Co-Founder 
                     </CustomAboutUs>
                     <CustomAboutDiscription
                         width={{md: "67rem", sm: "17.5rem", xs: "17.5rem"}}
