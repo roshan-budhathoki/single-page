@@ -5,6 +5,7 @@ import EmailIcon from '@mui/icons-material/Email';
 import PlaceIcon from '@mui/icons-material/Place';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import MobileLogo from '../../../assets/mobileLogo.png';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import AccessTimeIcon from '@mui/icons-material/AccessTime';
@@ -226,6 +227,9 @@ const Footer = () => {
                     <Link sx={{color: "black"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
                       <InstagramIcon  />
                     </Link>
+                    <Link sx={{color: "black"}} href="https://www.linkedin.com/company/numericmind/">
+                      <LinkedInIcon  />
+                    </Link>
                   </Box>
                 </ListItem>
               </List>
@@ -249,8 +253,11 @@ const Footer = () => {
               <Link sx={{color: "black"}} href="https://twitter.com/numericmind"> 
                 <TwitterIcon />
               </Link>
-              <Link sx={{color: "#515458"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
+              <Link sx={{color: "black"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
                 <InstagramIcon  />
+              </Link>
+              <Link sx={{color: "black"}} href="https://www.linkedin.com/company/numericmind/">
+                <LinkedInIcon />
               </Link>
             </Box>
           </Box>
