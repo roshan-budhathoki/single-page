@@ -162,14 +162,14 @@ const AboutContent = () => {
                         fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
                         marginTop={{ sm: "1rem", xs: "1rem", md: "2rem" }}
                     >
-                        Word From Our CEO & Co-Founder 
+                        Words From Our CEO & Co-Founder 
                     </CustomAboutUs>
                     <CustomAboutUs
                         display={{ md: "none", sm:"block", xs: "block"}}
                         fontSize={{ sm: "1.5rem", xs: "1.5rem", md: "2.5rem" }}
                         marginTop={{ sm: "1rem", xs: "1rem", md: "2rem" }}
                     >
-                        Word From Our <br /> CEO & Co-Founder 
+                        Words From Our <br /> CEO & Co-Founder 
                     </CustomAboutUs>
                     <CustomAboutDiscription
                         width={{md: "67rem", sm: "100%", xs: "100%"}}
