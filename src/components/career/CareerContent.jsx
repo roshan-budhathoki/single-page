@@ -98,7 +98,7 @@ const CareerContent = () => {
                     }
                    </Grid>
                 }
-                <Box width="100%" display="flex" height="15rem" justifyContent="center" alignContent="center" alignItems="center">
+                <Box width="100%" display="flex" height="16.5rem" justifyContent="center" alignContent="center" alignItems="center">
                     <Typography fontWeight="600" fontSize="2rem" color="#1F222A">
                         There is no current opening.
                     </Typography>
