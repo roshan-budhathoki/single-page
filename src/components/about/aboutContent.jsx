@@ -35,9 +35,14 @@ const AboutContent = () => {
                         width={{md: "70rem", sm: "100%", xs: "100%"}}
                         marginTop="1rem"
                     >
-                        NumericMind is a leading statistical consulting company specializing in 
-                        full statistical analysis services for Biotech, Healthcare, and Pharmaceuticals. We also offer statistical solutions and training to academic, research institutions, 
-                        and global government/non-government organizations. Unlock data-driven insights with us.
+                        NumericMind is a leading statistical analysis and data solutions company serving
+                         clients in the USA and Nepal. We specialize in providing comprehensive Clinical 
+                         Trials Programming services to industries such as Biotech, Healthcare, and
+                          Pharmaceuticals. Our expertise also extends to offering statistical solutions 
+                          and training services to academic institutions, research organizations, as well 
+                          as global government and non-government organizations. By leveraging our expertise, 
+                          our clients can gain valuable data-driven insights and make informed decisions. 
+                          Contact us today to unlock the power of statistical analysis for your organization
                     </Typography>
                 </Box>
 
