@@ -4,7 +4,10 @@ import { CustomServiceHeading, CustomServiceTypography } from "../utils/CustomTy
 import { dataMobileConstant, dataWebConstant, developerWebConstant, mobileDeveloperConstant } from './imageContainer';
 
 const TeamContent = () => {
+  const [showStaff, setStaff] = React.useState(false);
   const [showDeveloper, setShowDeveloper] = React.useState(true);
+  const [showDataScientist, setShowDataScientist] = React.useState(false);
+
 
   return (
     <Container>
@@ -47,30 +50,42 @@ const TeamContent = () => {
             flexDirection= {{md: "row", sm: "column", xs: "column"}}
             justifyContent="space-between"
             alignItems="center"
-            width="100%"
+            width="99%"
           >
             <Box 
-              width={{ md: "50%", sm: "100%", xs: "100%" }}
+              width={{ md: "33%", sm: "100%", xs: "100%" }}
               bgcolor={ showDeveloper ?  "#F05C26" : "transparent" }  
               sx={{ cursor: "pointer" }}
               color={ showDeveloper ? "#fff" : "#171819" } 
               borderRadius="10px" padding=".7rem" textAlign="center" 
-              onClick={(e) =>{ e.preventDefault(); setShowDeveloper(true)}}
+              onClick={(e) =>{ e.preventDefault(); setShowDeveloper(true); setShowDataScientist(false); setStaff(false)}}
             >
               <CustomServiceTypography>
                 Meet Our Developers
               </CustomServiceTypography>
             </Box>
             <Box 
-              width={{ md: "50%", sm: "100%", xs: "100%" }}
-              bgcolor={ showDeveloper ? "transparent" : "#F05C26"  }  
-              color={ showDeveloper ?  "#171819" : "#fff" }  
+              width={{ md: "33%", sm: "100%", xs: "100%" }}
+              bgcolor={ showDataScientist ? "#F05C26" : "transparent" }  
+              color={ showDataScientist ?  "#fff" : "#171819" }  
               sx={{ cursor: "pointer" }}
-              onClick={(e)=> { e.preventDefault(); setShowDeveloper(false)}}
+              onClick={(e)=> { e.preventDefault(); setShowDeveloper(false); setShowDataScientist(true); setStaff(false)}}
               borderRadius="10px" padding=".7rem" textAlign="center" 
             >
               <CustomServiceTypography>
                 Meet Our Data Scientists
+              </CustomServiceTypography>
+            </Box>
+            <Box 
+              width={{ md: "33%", sm: "100%", xs: "100%" }}
+              bgcolor={ showStaff ? "#F05C26" : "transparent"  }  
+              color={ showStaff ? "#fff" : "#171819"  }  
+              sx={{ cursor: "pointer" }}
+              onClick={(e)=> { e.preventDefault(); setStaff(true); setShowDataScientist(false); setShowDeveloper(false);}}
+              borderRadius="10px" padding=".7rem" textAlign="center" 
+            >
+              <CustomServiceTypography>
+                Meet Our Staff
               </CustomServiceTypography>
             </Box>
           </Box>
@@ -81,7 +96,7 @@ const TeamContent = () => {
         <Grid container paddingX="1.5rem" sx={{ display: { md: "flex", sm:"none", xs:"none"}}}>
           {
             developerWebConstant.map((item, index) =>
-              <Grid items md={3} key={index} marginBottom="0.6rem">
+              <Grid items md={3} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
                   <img src={item} alt="team" />
               </Grid>
             ) 
@@ -93,7 +108,7 @@ const TeamContent = () => {
         <Grid container sx={{ display: { md: "none", sm:"flex", xs:"flex"}}}>
           {
             mobileDeveloperConstant.map((item, index) =>
-              <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem">
+              <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem"  display="flex" justifyContent="center" width="100%">
                   <img src={item} alt="team" />
               </Grid>
             ) 
@@ -105,7 +120,7 @@ const TeamContent = () => {
         <Grid container paddingX="1.5rem" sx={{ display: { md: "flex", sm:"none", xs:"none"}}}>
           {
             dataWebConstant.map((item, index) =>
-              <Grid items md={3} key={index} marginBottom="0.6rem">
+              <Grid items md={3} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
                   <img src={item} alt="team" />
               </Grid>
             ) 
@@ -117,7 +132,7 @@ const TeamContent = () => {
         <Grid container sx={{ display: { md: "none", sm:"flex", xs:"flex"}}}>
           {
             dataMobileConstant.map((item, index) =>
-              <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem">
+              <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
                   <img src={item} alt="team" />
               </Grid>
             ) 

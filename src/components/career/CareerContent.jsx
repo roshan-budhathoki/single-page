@@ -58,8 +58,10 @@ const CareerContent = () => {
                     width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                     marginTop="1rem"
                     >
-                     Specializing in designing and building scalable data collection and analysis systems.
-                      Trust us to shape your career with industry-level expertise in this domain.
+                     Leverage our expertise in designing, building, and optimizing scalable data collection 
+                     and analysis systems to propel your career to new heights. 
+                     Trust us to shape and refine your professional trajectory with our 
+                     industry-level proficiency in this domain.
                     </Typography>
                 </Box>
             </Box>

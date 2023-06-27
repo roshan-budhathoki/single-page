@@ -16,6 +16,7 @@ import dev15 from "../../assets/teams/web/dev15.png";
 import dev16 from "../../assets/teams/web/dev16.png";
 import dev17 from "../../assets/teams/web/dev17.png";
 import dev18 from "../../assets/teams/web/dev18.png";
+import dev19 from "../../assets/teams/web/dev19.png";
 
 import mobileDev2 from "../../assets/teams/mobile/dev2.png";
 import mobileDev3 from "../../assets/teams/mobile/dev3.png";
@@ -35,7 +36,7 @@ import mobileDev15 from "../../assets/teams/mobile/dev15.png";
 import mobileDev16 from "../../assets/teams/mobile/dev16.png";
 import mobileDev17 from "../../assets/teams/mobile/dev17.png";
 import mobileDev18 from "../../assets/teams/mobile/dev18.png";
-
+import mobileDev19 from "../../assets/teams/mobile/dev19.png";
 
 import data1 from "../../assets/teams/web/data1.png";
 import data2 from "../../assets/teams/web/data2.png";
@@ -60,6 +61,13 @@ import data20 from "../../assets/teams/web/data20.png";
 import data21 from "../../assets/teams/web/data21.png";
 import data22 from "../../assets/teams/web/data22.png";
 import data23 from "../../assets/teams/web/data23.png";
+import data24 from "../../assets/teams/web/data24.png";
+import data25 from "../../assets/teams/web/data25.png";
+import data26 from "../../assets/teams/web/data26.png";
+import data27 from "../../assets/teams/web/data27.png";
+import data28 from "../../assets/teams/web/data28.png";
+import data29 from "../../assets/teams/web/data29.png";
+import data30 from "../../assets/teams/web/data30.png";
 
 import dataMobile1 from "../../assets/teams/mobile/dataMobile1.png";
 import dataMobile2 from "../../assets/teams/mobile/dataMobile2.png";
@@ -84,29 +92,37 @@ import dataMobile20 from "../../assets/teams/mobile/dataMobile20.png";
 import dataMobile21 from "../../assets/teams/mobile/dataMobile21.png";
 import dataMobile22 from "../../assets/teams/mobile/dataMobile22.png";
 import dataMobile23 from "../../assets/teams/mobile/dataMobile23.png";
+import dataMobile24 from "../../assets/teams/mobile/dataMobile24.png";
+import dataMobile25 from "../../assets/teams/mobile/dataMobile25.png";
+import dataMobile26 from "../../assets/teams/mobile/dataMobile26.png";
+import dataMobile27 from "../../assets/teams/mobile/dataMobile27.png";
+import dataMobile28 from "../../assets/teams/mobile/dataMobile28.png";
+import dataMobile29 from "../../assets/teams/mobile/dataMobile29.png";
+import dataMobile30 from "../../assets/teams/mobile/dataMobile30.png";
+
 
 export const developerWebConstant = [
     dev1, dev2, dev3, dev4, dev5, dev6, dev7,
     dev8, dev9, dev10, dev11, dev12, dev13, dev14,
-    dev15, dev16, dev17, dev18
+    dev15, dev16, dev17, dev18, dev19,
 ]
 
 export const mobileDeveloperConstant = [
-    mobileDev1, mobileDev2, mobileDev3, mobileDev4, mobileDev5, mobileDev6, mobileDev7,
-    mobileDev8, mobileDev9, mobileDev10, mobileDev11, mobileDev12, mobileDev13, mobileDev14,
-    mobileDev15, mobileDev16, mobileDev17, mobileDev18
+    mobileDev3, mobileDev6, mobileDev16, mobileDev10, mobileDev4, mobileDev9, mobileDev14,
+    mobileDev18, mobileDev17, mobileDev2, mobileDev15, mobileDev1, mobileDev13, mobileDev11,
+    mobileDev8, mobileDev12, mobileDev7, mobileDev19, mobileDev5
 ]
 
 export const dataWebConstant = [
-    data1, data2, data3, data4, data5, data6, data7,
-    data8, data9, data10, data11, data12, data13, data14,
-    data15, data16, data17, data18, data19, data20, data21,
-    data22, data23
+    data21, data19, data17, data24, data25, data16, data4,
+    data22, data12, data18, data6, data7, data20, data9,
+    data1, data13, data8, data14, data5, data3, data23,
+    data10, data2, data15, data11, data26, data27, data28, data29, data30
 ]
 
 export const dataMobileConstant = [
-    dataMobile1, dataMobile2, dataMobile3, dataMobile4, dataMobile5, dataMobile6, dataMobile7,
-    dataMobile8, dataMobile9, dataMobile10, dataMobile11, dataMobile12, dataMobile13, dataMobile14,
-    dataMobile15, dataMobile16, dataMobile17, dataMobile18, dataMobile19, dataMobile20, dataMobile21,
-    dataMobile22, dataMobile23
+    dataMobile21, dataMobile19, dataMobile17, dataMobile24, dataMobile25, dataMobile16, dataMobile4,
+    dataMobile22, dataMobile12, dataMobile18, dataMobile6, dataMobile7, dataMobile20, dataMobile9,
+    dataMobile1, dataMobile13, dataMobile8, dataMobile14, dataMobile5, dataMobile3, dataMobile23,
+    dataMobile10, dataMobile2, dataMobile15, dataMobile11, dataMobile26, dataMobile27, dataMobile28, dataMobile29, dataMobile30
 ]
