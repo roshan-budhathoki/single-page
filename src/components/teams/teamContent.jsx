@@ -1,7 +1,7 @@
 import React from 'react'
 import { Container, Box, Typography, Grid } from '@mui/material';
 import { CustomServiceHeading, CustomServiceTypography } from "../utils/CustomTypography";
-import { dataMobileConstant, dataWebConstant, developerWebConstant, mobileDeveloperConstant, mobileFounderList, webFounderList } from './imageContainer';
+import { dataMobileConstant, dataWebConstant, developerWebConstant, mobileDeveloperConstant, mobileFounderList, mobileStaffList, webFounderList, webStaffList } from './imageContainer';
 
 const TeamContent = () => {
   const [showStaff, setStaff] = React.useState(false);
@@ -141,7 +141,7 @@ const TeamContent = () => {
         </Grid>
       }
       {
-        !showDeveloper && 
+        showDataScientist && 
         <Grid container paddingX="1.5rem" sx={{ display: { md: "flex", sm:"none", xs:"none"}}}>
           {
             dataWebConstant.map((item, index) =>
@@ -153,10 +153,34 @@ const TeamContent = () => {
         </Grid>
       }
       {
-        !showDeveloper && 
+        showDataScientist && 
         <Grid container sx={{ display: { md: "none", sm:"flex", xs:"flex"}}}>
           {
             dataMobileConstant.map((item, index) =>
+              <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
+                  <img src={item} alt="team" />
+              </Grid>
+            ) 
+          }
+        </Grid>
+      }
+      {
+        showStaff && 
+        <Grid container paddingX="1.5rem" sx={{ display: { md: "flex", sm:"none", xs:"none"}}}>
+          {
+            webStaffList.map((item, index) =>
+              <Grid items md={3} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
+                  <img src={item} alt="team" />
+              </Grid>
+            ) 
+          }
+        </Grid>
+      }
+      {
+        showStaff && 
+        <Grid container sx={{ display: { md: "none", sm:"flex", xs:"flex"}}}>
+          {
+            mobileStaffList.map((item, index) =>
               <Grid items sm={6} xs={6} key={index} marginBottom="0.6rem" display="flex" justifyContent="center" width="100%">
                   <img src={item} alt="team" />
               </Grid>
