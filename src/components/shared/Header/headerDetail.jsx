@@ -212,8 +212,9 @@ const Header = () => {
               color="inherit"
               aria-label="menu"
               sx={{ mr: 6, color: "black" }}
+              onClick={toggleDrawer(true)}
             >
-              <MenuIcon onClick={toggleDrawer(true)} />
+              <MenuIcon  />
             </IconButton>
             <SwipeableDrawer
               anchor="right"

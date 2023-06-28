@@ -130,7 +130,7 @@ const OurPartner = () => {
                       Receive updates from us.
                     </Typography>
                     <CustomDiscriptionTypography width="28rem" >
-                      Contact us for meeting and demo, 
+                      Contact us for meetings and demos, 
                       our team will reach to you.
                     </CustomDiscriptionTypography>
                   </Box>

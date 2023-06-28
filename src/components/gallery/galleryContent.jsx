@@ -3,7 +3,6 @@ import { Container } from '@mui/material'
 import Masonry, { ResponsiveMasonry } from 'react-responsive-masonry'
 
 import gallery2 from "../../assets/gallery/gallery2.jpg"
-import gallery3 from "../../assets/gallery/gallery3.jpg"
 import gallery4 from "../../assets/gallery/gallery4.jpg"
 import gallery5 from "../../assets/gallery/gallery5.jpg"
 import gallery6 from "../../assets/gallery/gallery6.jpg"
@@ -23,7 +22,7 @@ import gallery21 from "../../assets/gallery/gallery21.jpg"
 
 const GalleryContent = () => {
     const dataWebConstant = [
-        gallery2, gallery3, gallery4, gallery5, gallery6, gallery7,
+        gallery2, gallery4, gallery5, gallery6, gallery7,
         gallery8, gallery9, gallery10, gallery13, gallery14,
         gallery15, gallery16, gallery17, gallery18, gallery19, gallery20, gallery21,
     ]
@@ -40,7 +39,7 @@ const GalleryContent = () => {
                 <Masonry style={{ padding: "1rem"}}>
                     {
                         dataWebConstant.map((item, index) => 
-                            <img src={item} ket={index} alt="founder message"/>
+                            <img src={item} key={index} alt="founder message"/>
                         )
                     }
                 </Masonry>

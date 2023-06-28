@@ -27,12 +27,12 @@ const FounderMessage = () => {
                         sx={{ justifyContent: "center", display: { xs : "flex", sm: "flex", md: "none"}}}
 
                     >
-                        Our Founder
+                        Our CEO
                     </CustomHeadingTypography>
                     <CustomHeadingTypography
                         sx={{ display: { xs : "none", sm: "none", md: "flex"}}}
                     >
-                        Message From Our Founder
+                        Message From Our CEO
                     </CustomHeadingTypography>
                     <CustomDiscriptionTypography
                         sx={{

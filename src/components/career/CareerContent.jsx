@@ -100,9 +100,12 @@ const CareerContent = () => {
                     }
                    </Grid>
                 }
-                <Box width="100%" display="flex" height="16.5rem" justifyContent="center" alignContent="center" alignItems="center">
-                    <Typography fontWeight="600" fontSize="2rem" color="#1F222A">
+                <Box width="100%" display="flex" flexDirection="column" height="16.5rem" justifyContent="center" alignContent="center" alignItems="center">
+                    <Typography fontWeight="600" fontSize={{ xs: "1.5rem", sm:"1.5rem", md: "2rem" }} color="#1F222A">
                         There is no current opening.
+                    </Typography>
+                    <Typography fontWeight="600" marginTop=".5rem" fontSize={{ xs: ".7rem", sm:".7rem", md: "1rem" }} color="#1F222A">
+                        Feel free to drop your resume on hr@numericmind.com
                     </Typography>
                 </Box>
             </Container>

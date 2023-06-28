@@ -138,7 +138,8 @@ const Footer = () => {
                 the USA and Nepal. We specialize in providing comprehensive Clinical Trials Programming services
                 to industries such as Biotech, Healthcare, and Pharmaceuticals. Our expertise also extends 
                 to offering statistical solutions and training services to academic institutions, research 
-                organizations, as well as global government and non-government organizations. By leveraging our expertise, our clients can gain valuable data-driven insights and make informed decisions. 
+                organizations, as well as global government and non-government organizations. 
+                By leveraging our expertise, our clients can gain valuable data-driven insights and make informed decisions. 
                 Contact us today to unlock the power of statistical analysis for your organization
               </CustomFooterTypography>
             </Grid>
@@ -222,7 +223,7 @@ const Footer = () => {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" justifyContent="center" width="100%" paddingY= ".5rem"> 
+                  <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" justifyContent="center" width="100%" paddingTop= ".5rem"> 
                     <Link sx={{color: "black"}} href="https://www.facebook.com/numericmind">
                       <FacebookIcon />
                     </Link>
@@ -230,7 +231,7 @@ const Footer = () => {
                       <TwitterIcon sx={{ marginX: "1rem"}} />
                     </Link>
                     <Link sx={{color: "black"}} href="https://www.instagram.com/numericmind/?igshid=Y2IzZGU1MTFhOQ%3D%3D&fbclid=IwAR3XdC4q5za49sHDPau0WZcFM5JDIk8_3VUlmHq6ukI6qGF-MgVpI_SogY8">
-                      <InstagramIcon  />
+                      <InstagramIcon sx={{ marginRight: "1rem"}}  />
                     </Link>
                     <Link sx={{color: "black"}} href="https://www.linkedin.com/company/numericmind/">
                       <LinkedInIcon  />
