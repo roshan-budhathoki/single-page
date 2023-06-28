@@ -223,7 +223,7 @@ const Footer = () => {
                   </ListItemButton>
                 </ListItem>
                 <ListItem disablePadding>
-                  <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" justifyContent="center" width="100%" paddingTop= ".5rem"> 
+                  <Box sx={{ display: { xs : "flex", sm: "flex", md: "none"}}} color="#515458" width="100%" justifyContent="center" paddingTop= ".5rem"> 
                     <Link sx={{color: "black"}} href="https://www.facebook.com/numericmind">
                       <FacebookIcon />
                     </Link>

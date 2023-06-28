@@ -1,10 +1,11 @@
-import { Box, Container } from "@mui/material";
+import { Box, Container, IconButton, Link } from "@mui/material";
 
 import ButtonComponent from "../utils/ButtonComponent";
 import founderProfile from "../../assets/founderMessage.png";
 import founderMobileProfile from "../../assets/founderMessageMobile.png";
 import { CustomDiscriptionTypography, CustomHeadingTypography } from "../utils/CustomTypography";
 import { useNavigate } from "react-router-dom";
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const FounderMessage = () => {
     const navigate  = useNavigate();
@@ -47,9 +48,16 @@ const FounderMessage = () => {
                         refining my data and analytical skills. Currently, I am thrilled to 
                         lead NumericMind, a rapidly growing clinical programming and data analytics service company. 
                     </CustomDiscriptionTypography>
-                    <ButtonComponent width={{ md: "13rem"}} bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
-                        Read More
-                    </ButtonComponent>
+                    <Box display="flex">
+                        <ButtonComponent width={{ md: "13rem", sm: "10rem", xs: "10rem"}} bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
+                            Read More
+                        </ButtonComponent>
+                        <IconButton sx={{ background: "#f05c26", color: "white", border: "2px solid #f05c26", borderRadius: "10px", paddingY: "0px", marginLeft: "1rem"}}>
+                            <Link sx={{textDecoration: "none", color: "white", marginBottom: "-6px"}} href="https://www.linkedin.com/in/hemantash/">
+                                <LinkedInIcon fontSize="3rem" />
+                            </Link>
+                        </IconButton>
+                    </Box>
                 </Box>
             </Box>
         </Container>

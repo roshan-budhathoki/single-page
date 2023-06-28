@@ -1,14 +1,13 @@
 import React from 'react'
 import { Container, Box, Typography, Grid } from '@mui/material';
 import { CustomServiceHeading, CustomServiceTypography } from "../utils/CustomTypography";
-import { dataMobileConstant, dataWebConstant, developerWebConstant, mobileDeveloperConstant } from './imageContainer';
+import { dataMobileConstant, dataWebConstant, developerWebConstant, mobileDeveloperConstant, mobileFounderList, webFounderList } from './imageContainer';
 
 const TeamContent = () => {
   const [showStaff, setStaff] = React.useState(false);
   const [showDeveloper, setShowDeveloper] = React.useState(true);
   const [showDataScientist, setShowDataScientist] = React.useState(false);
-
-
+ 
   return (
     <Container>
       <Box
@@ -43,6 +42,32 @@ const TeamContent = () => {
               </Typography>
           </Box>
       </Box>
+        <Grid container sx={{ display: { md: "none", sm:"flex", xs:"flex"}}} width="100%" justifyContent="center">
+          {
+            mobileFounderList.map((item, index) => 
+              <Grid items key={index} sm={6} xs={6} marginBottom="0.6rem" display="flex" flexDirection="column" justifyContent="center" width="100%">
+                <Box textAlign="center" marginTop="1rem">
+                  <img src={item} alt="team" />
+                  <Typography fontWeight={600} fontSize="10px">{index === 0 ? "Hemanta Shrestha, Ph.D.": "Sunil Nepal, Ph.D."}</Typography>
+                  <Typography fontWeight={600} fontSize="10px">Co-Founder</Typography>
+                </Box>
+              </Grid>
+            )
+          }
+        </Grid>
+        <Grid container paddingX="1.5rem" sx={{ display: { md: "flex", sm:"none", xs:"none"}}} justifyContent="space-around" marginTop="1rem">
+          {
+            webFounderList.map((item, index) => 
+              <Grid items md={4} key={index} marginBottom="0.6rem" display="flex" flexDirection="column" justifyContent="center" width="100%">
+                <img src={item} alt="team"/>
+                <Box display="flex" flexDirection="column" width="100%" justifyContent="center" textAlign="center" marginTop="1rem">
+                  <Typography fontWeight={600} fontSize="20px">{index === 0 ? "Hemanta Shrestha, Ph.D.": "Sunil Nepal, Ph.D."}</Typography>
+                  <Typography fontWeight={600} fontSize="20px">Co-Founder</Typography>
+                </Box>
+              </Grid>
+            )
+          }
+        </Grid>
       <Container>
         <Box paddingY={{md: "4rem", xs: "1.5rem"}}>
           <Box  

@@ -68,6 +68,8 @@ import data27 from "../../assets/teams/web/data27.png";
 import data28 from "../../assets/teams/web/data28.png";
 import data29 from "../../assets/teams/web/data29.png";
 import data30 from "../../assets/teams/web/data30.png";
+import hemantaSirWeb from "../../assets/teams/web/hemantaSir.png";
+import sushilNepalWeb from "../../assets/teams/web/sushilNepal.png";
 
 import dataMobile1 from "../../assets/teams/mobile/dataMobile1.png";
 import dataMobile2 from "../../assets/teams/mobile/dataMobile2.png";
@@ -99,6 +101,8 @@ import dataMobile27 from "../../assets/teams/mobile/dataMobile27.png";
 import dataMobile28 from "../../assets/teams/mobile/dataMobile28.png";
 import dataMobile29 from "../../assets/teams/mobile/dataMobile29.png";
 import dataMobile30 from "../../assets/teams/mobile/dataMobile30.png";
+import hemantaSir from "../../assets/teams/mobile/hemantasir.png";
+import sushilNepal from "../../assets/teams/mobile/sunilNepal.png";
 
 
 export const developerWebConstant = [
@@ -125,4 +129,14 @@ export const dataMobileConstant = [
     dataMobile22, dataMobile12, dataMobile18, dataMobile6, dataMobile7, dataMobile20, dataMobile9,
     dataMobile1, dataMobile13, dataMobile8, dataMobile14, dataMobile5, dataMobile3, dataMobile23,
     dataMobile10, dataMobile2, dataMobile15, dataMobile11, dataMobile26, dataMobile27, dataMobile28, dataMobile29, dataMobile30
+]
+
+export const mobileFounderList = [
+    hemantaSir,
+    sushilNepal
+]
+
+export const webFounderList = [
+    hemantaSirWeb,
+    sushilNepalWeb
 ]
