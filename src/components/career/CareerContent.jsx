@@ -58,7 +58,7 @@ const CareerContent = () => {
                     width={{md: "70rem", sm: "19.5rem", xs: "19.5rem"}}
                     marginTop="1rem"
                     >
-                     Leverage our expertise in designing, building, and optimizing scalable data collection 
+                     We leverage your expertise in designing, building, and optimizing scalable data collection 
                      and analysis systems to propel your career to new heights. 
                      Trust us to shape and refine your professional trajectory with our 
                      industry-level proficiency in this domain.

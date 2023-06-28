@@ -85,7 +85,7 @@ const TeamContent = () => {
               borderRadius="10px" padding=".7rem" textAlign="center" 
             >
               <CustomServiceTypography>
-                Meet Our Staff
+                Meet Our Staffs
               </CustomServiceTypography>
             </Box>
           </Box>
