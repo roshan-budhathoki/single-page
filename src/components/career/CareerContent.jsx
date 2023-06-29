@@ -105,7 +105,10 @@ const CareerContent = () => {
                         There is no current opening.
                     </Typography>
                     <Typography fontWeight="600" marginTop=".5rem" fontSize={{ xs: ".7rem", sm:".7rem", md: "1rem" }} color="#1F222A">
-                        Feel free to drop your resume on hr@numericmind.com
+                        Feel free to drop your resume on
+                    </Typography>
+                    <Typography fontWeight="600" fontSize={{ xs: ".7rem", sm:".7rem", md: "1rem" }} color="#1F222A">
+                        hr@numericmind.com
                     </Typography>
                 </Box>
             </Container>

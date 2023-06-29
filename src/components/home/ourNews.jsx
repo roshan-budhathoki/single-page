@@ -62,7 +62,9 @@ const OurNews = () => {
                                             {news.newsHeading}
                                         </Typography>
                                         <Typography fontSize="1rem" fontWeight={400} marginTop=".5rem">
-                                            We’re a team made up of individuals, several with unconventional career paths military ...   
+                                            {
+                                                news.description.slice(0, 120)
+                                            }  
                                         </Typography>
                                         <Box marginTop="1rem">
                                             <Link href={news.path} >

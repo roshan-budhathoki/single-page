@@ -1,11 +1,12 @@
-import { Box, Container, IconButton, Link } from "@mui/material";
-
+import { useNavigate } from "react-router-dom";
+import { Box, Container, Link } from "@mui/material";
 import ButtonComponent from "../utils/ButtonComponent";
+
+
+import linkedinImage from "../../assets/linkedin.png"
 import founderProfile from "../../assets/founderMessage.png";
 import founderMobileProfile from "../../assets/founderMessageMobile.png";
 import { CustomDiscriptionTypography, CustomHeadingTypography } from "../utils/CustomTypography";
-import { useNavigate } from "react-router-dom";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
 
 const FounderMessage = () => {
     const navigate  = useNavigate();
@@ -26,7 +27,6 @@ const FounderMessage = () => {
                 <Box sx={{ width: { xs: "100%", sm: "100%", md: "36rem"}}}>
                     <CustomHeadingTypography
                         sx={{ justifyContent: "center", display: { xs : "flex", sm: "flex", md: "none"}}}
-
                     >
                         Our CEO
                     </CustomHeadingTypography>
@@ -52,11 +52,9 @@ const FounderMessage = () => {
                         <ButtonComponent width={{ md: "13rem", sm: "10rem", xs: "10rem"}} bgcolor="#F05C26" sx={{ cursor: "pointer"}} onClick={() => navigate('/about/wordFromCeo')}>
                             Read More
                         </ButtonComponent>
-                        <IconButton sx={{ background: "#f05c26", color: "white", border: "2px solid #f05c26", borderRadius: "10px", paddingY: "0px", marginLeft: "1rem"}}>
-                            <Link sx={{textDecoration: "none", color: "white", marginBottom: "-6px"}} href="https://www.linkedin.com/in/hemantash/">
-                                <LinkedInIcon fontSize="3rem" />
-                            </Link>
-                        </IconButton>
+                        <Link sx={{textDecoration: "none", color: "white", marginBottom: "-6px"}} href="https://www.linkedin.com/in/hemantash/">
+                            <img src={linkedinImage} alt="linkedin ui" height="48px" style={{ "marginLeft": "1rem"}}  />
+                        </Link>
                     </Box>
                 </Box>
             </Box>
