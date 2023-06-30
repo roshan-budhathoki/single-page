@@ -131,10 +131,10 @@ export const dataWebConstant = [
 ]
 
 export const dataMobileConstant = [
-    dataMobile21, dataMobile19, dataMobile17, dataMobile24, dataMobile25, dataMobile16, dataMobile4,
-    dataMobile22, dataMobile12, dataMobile18, dataMobile6, dataMobile7, dataMobile20, dataMobile9,
-    dataMobile1, dataMobile13, dataMobile8, dataMobile14, dataMobile5, dataMobile3, dataMobile23,
-    dataMobile10, dataMobile2, dataMobile15, dataMobile11, dataMobile26, dataMobile27, dataMobile28, dataMobile29, dataMobile30
+    dataMobile11, dataMobile13, dataMobile16, dataMobile24, dataMobile25, dataMobile17, dataMobile3,
+    dataMobile10, dataMobile21, dataMobile14, dataMobile5, dataMobile7, dataMobile12, dataMobile15,
+    dataMobile1, dataMobile20, dataMobile6, dataMobile19, dataMobile4, dataMobile2, dataMobile9,
+    dataMobile23, dataMobile8, dataMobile18, dataMobile22, dataMobile26, dataMobile27, dataMobile28, dataMobile29, dataMobile30
 ]
 
 export const mobileFounderList = [

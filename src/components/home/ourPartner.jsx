@@ -77,9 +77,10 @@ const OurPartner = () => {
                   fontSize="0.8rem !important"
                   fontWeight="600"
                   textAlign="center"
+                  justifyContent="center"
                   sx={{ display: { xs : "flex", sm: "flex", md: "none"}}}
               >
-                  Trusted By over 150,000 Companies including
+                  Our Partners & Alliances
               </CustomHeadingTypography>
 
               <Box sx={{ display: { xs : "none", sm: "none", md: "flex"}}} justifyContent="center" paddingY="3rem" marginBottom="4rem">
