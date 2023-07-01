@@ -109,6 +109,8 @@ import sushilNepal from "../../assets/teams/mobile/sunilNepal.png";
 import aakritiMobile from  "../../assets/teams/mobile/aakriti.png";
 import bimalaMobile from "../../assets/teams/mobile/bimala.png";
 import namitMobile from "../../assets/teams/mobile/namit.png";
+import bishalMobile from "../../assets/teams/mobile/bishalMobile.png";
+import bishalWeb from "../../assets/teams/web/bishalDai.png";
 
 
 export const developerWebConstant = [
@@ -148,9 +150,9 @@ export const webFounderList = [
 ]
 
 export const mobileStaffList = [
-    aakritiMobile, bimalaMobile, namitMobile
+    aakritiMobile, bimalaMobile, namitMobile, bishalMobile
 ]
 
 export const webStaffList = [
-    namitsir, aakriti, bimaladd
+    aakriti, bimaladd, namitsir, bishalWeb, 
 ]
