@@ -41,10 +41,10 @@ import gallery21 from "../../assets/gallery/gallery21.jpg"
 const GalleryContent = () => {
     const dataWebConstant = [
         gallery2, gallery4, gallery5, gallery6, gallery7,
-        gallery8, gallery9, gallery10, gallery13, gallery14,
-        gallery15, gallery16, gallery17, gallery18, gallery19, gallery20, gallery21,
         gallery22, gallery23, gallery24, gallery25, gallery26, gallery27, gallery28,
+        gallery8, gallery9, gallery10, gallery13, gallery14,
         gallery29, gallery30, gallery31, gallery32, gallery33, gallery34, gallery35,
+        gallery15, gallery16, gallery17, gallery18, gallery19, gallery20, gallery21,
         gallery36, gallery37, gallery38, gallery39
     ]
     const breakpointColumnsObj = {
