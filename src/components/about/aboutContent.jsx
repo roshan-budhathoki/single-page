@@ -35,7 +35,7 @@ const AboutContent = () => {
                         width={{md: "70rem", sm: "100%", xs: "100%"}}
                         marginTop="1rem"
                     >
-                        Numeric Mind is a statistical consulting company providing full statistical analysis services primarily 
+                        NumericMind is a statistical data solution company providing full statistical analysis services primarily 
                         to the clients from Biotech, Healthcare, and Pharmaceuticals industries. Numeric Mind also provides statistical 
                         solutions and training services 
                         to academic and research institutions, government and non-government organizations across the globe.
