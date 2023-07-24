@@ -81,7 +81,7 @@ const TeamContent = () => {
               width={{ md: "33%", sm: "100%", xs: "100%" }}
               bgcolor={ showDeveloper ?  "#F05C26" : "transparent" }  
               sx={{ cursor: "pointer" }}
-              color={ showDeveloper ? "#fff" : "#171819" } 
+              color={ showDeveloper ? "#fff" : "#F05C26" } 
               borderRadius="10px" padding=".7rem" textAlign="center" 
               onClick={(e) =>{ e.preventDefault(); setShowDeveloper(true); setShowDataScientist(false); setStaff(false)}}
             >
@@ -92,7 +92,7 @@ const TeamContent = () => {
             <Box 
               width={{ md: "33%", sm: "100%", xs: "100%" }}
               bgcolor={ showDataScientist ? "#F05C26" : "transparent" }  
-              color={ showDataScientist ?  "#fff" : "#171819" }  
+              color={ showDataScientist ?  "#fff" : "#F05C26" }  
               sx={{ cursor: "pointer" }}
               onClick={(e)=> { e.preventDefault(); setShowDeveloper(false); setShowDataScientist(true); setStaff(false)}}
               borderRadius="10px" padding=".7rem" textAlign="center" 
@@ -104,7 +104,7 @@ const TeamContent = () => {
             <Box 
               width={{ md: "33%", sm: "100%", xs: "100%" }}
               bgcolor={ showStaff ? "#F05C26" : "transparent"  }  
-              color={ showStaff ? "#fff" : "#171819"  }  
+              color={ showStaff ? "#fff" : "#F05C26"  }  
               sx={{ cursor: "pointer" }}
               onClick={(e)=> { e.preventDefault(); setStaff(true); setShowDataScientist(false); setShowDeveloper(false);}}
               borderRadius="10px" padding=".7rem" textAlign="center" 

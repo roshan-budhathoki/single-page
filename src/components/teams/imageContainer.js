@@ -150,9 +150,9 @@ export const webFounderList = [
 ]
 
 export const mobileStaffList = [
-    aakritiMobile, bimalaMobile, namitMobile, bishalMobile
+    bishalMobile, namitMobile, aakritiMobile, bimalaMobile
 ]
 
 export const webStaffList = [
-    aakriti, bimaladd, namitsir, bishalWeb, 
+    bishalWeb, namitsir, aakriti, bimaladd,   
 ]
