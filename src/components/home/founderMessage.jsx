@@ -4,8 +4,8 @@ import ButtonComponent from "../utils/ButtonComponent";
 
 
 import linkedinImage from "../../assets/linkedin.png"
-import founderProfile from "../../assets/founderMessage.png";
-import founderMobileProfile from "../../assets/founderMessageMobile.png";
+import founderProfile from "../../assets/hemantasirprofile.png";
+import founderMobileProfile from "../../assets/hemantasirprofileMob.png";
 import { CustomDiscriptionTypography, CustomHeadingTypography } from "../utils/CustomTypography";
 
 const FounderMessage = () => {
